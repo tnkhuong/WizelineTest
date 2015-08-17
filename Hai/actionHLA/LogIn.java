@@ -1,0 +1,19 @@
+package actionHLA;
+
+import actionBuiltIn.*;
+import objectRepository.*;
+//import org.openqa.selenium.WebDriver;
+//import config.Init;
+
+public class LogIn extends AutoAction{
+
+	static LoginPage loginpage = new LoginPage();
+	static MainPage mainPage = new MainPage();
+	public LogIn (String repo, String username, String password) throws Exception {
+		SelectDropdown(loginpage.repository_combobox,repo,"text");	
+		Enter(loginpage.username_textbox, username);
+		Enter(loginpage.password_textbox,password);
+		Click(loginpage.login_button);	
+		WaitForControl(mainPage.addPage_link,20000);
+	}
+}
