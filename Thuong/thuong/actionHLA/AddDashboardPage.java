@@ -1,8 +1,8 @@
 package thuong.actionHLA;
 
 import config.GlobalVariables;
-import objectRepository.MainPage;
-import objectRepository.NewPage;
+import object_repository.MainPage;
+import object_repository.NewPage;
 import actionBuiltIn.AutoAction;
 
 public class AddDashboardPage extends AutoAction{

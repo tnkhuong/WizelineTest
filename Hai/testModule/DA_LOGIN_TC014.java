@@ -1,7 +1,9 @@
 package testModule;
 
-import objectRepository.MainPage;
+import object_repository.MainPage;
+
 import org.testng.annotations.Test;
+
 import actionHLA.AutoHLActions;
 import config.GlobalVariables;
 import config.Init;

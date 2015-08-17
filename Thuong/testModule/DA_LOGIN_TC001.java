@@ -1,8 +1,9 @@
 package testModule;
 import org.testng.annotations.Test;
+
 import config.GlobalVariables;
 import actionHLA.AutoHLActions;
-import objectRepository.MainPage;
+import object_repository.MainPage;
 
 public class DA_LOGIN_TC001 extends AutoHLActions{
 	MainPage page=new MainPage();

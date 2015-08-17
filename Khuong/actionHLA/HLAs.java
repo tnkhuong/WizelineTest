@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import actionBuiltIn.Click;
 import actionBuiltIn.Enter;
 //import actionBuiltIn.WaitForControl;
-import objectRepository.LoginPage;
+import object_repository.LoginPage;
 
 public class HLAs{
 	LoginPage loginpage=new LoginPage();

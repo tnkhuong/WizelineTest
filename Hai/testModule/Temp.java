@@ -1,8 +1,8 @@
 package testModule;
 import java.util.concurrent.TimeUnit;
 
-import objectRepository.MainPage;
-import objectRepository.NewPage;
+import object_repository.MainPage;
+import object_repository.NewPage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;

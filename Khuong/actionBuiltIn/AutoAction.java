@@ -2,7 +2,8 @@ package actionBuiltIn;
 import org.openqa.selenium.By;
 
 import config.Init;
-import actionHLA.*;
+import actionHLA.HLAs;
+import action_hla.*;
 
 public class AutoAction extends Init{
 	

@@ -1,7 +1,7 @@
 package thuong.actionHLA;
 
 import actionBuiltIn.AutoAction;
-import objectRepository.LoginPage;
+import object_repository.LoginPage;
 
 public class LogInDashboard extends AutoAction{
 

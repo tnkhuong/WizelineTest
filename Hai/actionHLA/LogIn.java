@@ -1,9 +1,10 @@
 package actionHLA;
 
-import actionBuiltIn.*;
-import objectRepository.*;
-//import org.openqa.selenium.WebDriver;
-//import config.Init;
+import actionBuiltIn.AutoAction;
+import action_built_in.*;
+import objectRepository.LoginPage;
+import objectRepository.MainPage;
+import object_repository.*;
 
 public class LogIn extends AutoAction{
 

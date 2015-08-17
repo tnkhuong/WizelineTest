@@ -2,8 +2,8 @@ package actionHLA;
 
 import org.openqa.selenium.By;
 
-import objectRepository.MainPage;
-import objectRepository.NewPage;
+import object_repository.MainPage;
+import object_repository.NewPage;
 import actionBuiltIn.AutoAction;
 
 public class AddPage extends AutoAction{

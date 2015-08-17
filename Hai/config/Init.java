@@ -1,7 +1,7 @@
 package config;
 
-import objectRepository.LoginPage;
-import objectRepository.MainPage;
+import object_repository.LoginPage;
+import object_repository.MainPage;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

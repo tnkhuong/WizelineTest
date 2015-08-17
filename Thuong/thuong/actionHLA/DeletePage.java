@@ -1,6 +1,6 @@
 package thuong.actionHLA;
 
-import objectRepository.MainPage;
+import object_repository.MainPage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

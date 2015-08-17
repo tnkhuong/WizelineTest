@@ -1,7 +1,7 @@
 package actionHLA;
 
-import objectRepository.LoginPage;
-import objectRepository.MainPage;
+import object_repository.LoginPage;
+import object_repository.MainPage;
 import actionBuiltIn.AutoAction;
 
 public class LogOut extends AutoAction{

@@ -1,7 +1,7 @@
 package testModule;
 
-import objectRepository.LoginPage;
-import objectRepository.MainPage;
+import object_repository.LoginPage;
+import object_repository.MainPage;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
