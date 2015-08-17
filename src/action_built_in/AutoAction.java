@@ -33,7 +33,7 @@ public class AutoAction extends Init{
 	
 	public static void CheckPopUpMessage(String expectedMesg)
 	{
-		new CheckPopPupMessage(driver, expectedMesg);
+		new CheckPopUpMessage(driver, expectedMesg);
 	}
 	
 	public static void SelectDropdown(By control, Integer value)
@@ -89,12 +89,12 @@ public class AutoAction extends Init{
 	{
 		new SelectSubMenuItem(driver, hover_control, selected_control);
 	}
+	
 	public static void getcontrolcoordinate(By control,int returnx, int returny)
 	{
 		new test(driver, control);
 		returnx=test.x1;
-		returny=test.y1;
-		
+		returny=test.y1;		
 	}
 }
 

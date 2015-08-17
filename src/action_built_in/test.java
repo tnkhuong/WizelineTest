@@ -14,7 +14,6 @@ public test(WebDriver driver,By control)
 	WebElement element=driver.findElement(control);
 	Point location = element.getLocation();
 	test.x1=location.x;
-	test.y1=location.y;
-	
+	test.y1=location.y;	
 }
 }
