@@ -11,48 +11,48 @@ public class AutoAction extends Init{
 	}
 
 	public static void clickObject(By control){
-		WaitForElement(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
+		waitForElement(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
 		new Click(driver, control);
 	}
 
 	public static void enterValue(By control, String value){
-		WaitForElement(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
+		waitForElement(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
 		new Enter(driver,control,value);
 	}
 
-	public static void CheckControlExist(By control,long timeout)
+	public static void checkControlExist(By control,long timeout)
 	{
 		new WaitForControl(driver, control, timeout);
 		new CheckControlExist(driver,control);
 	}
 	
-	public static void ExitPage()
+	public static void exitPage()
 	{
 		new ExitBrowser(driver);
 	}
 	
-	public static void CheckPopUpMessage(String expectedMesg)
+	public static void checkPopUpMessage(String expectedMesg)
 	{
 		new CheckPopUpMessage(driver, expectedMesg);
 	}
 	
-	public static void SelectDropdown(By control, Integer value)
+	public static void selectDropdown(By control, Integer value)
 	{
-		WaitForElement(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
+		waitForElement(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
 		new SelectDropdown(driver,control,value);
 	}
 	
-	public static void SelectDropdown(By control, String value, String option){	
-		WaitForElement(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
+	public static void selectDropdown(By control, String value, String option){	
+		waitForElement(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
 		new SelectDropdown(driver,control,value,option);
 	}
 	
-	public static void WaitForElement(By control, long timeout)
+	public static void waitForElement(By control, long timeout)
 	{
 		new WaitForControl(driver, control, timeout);
 	}
 	
-	public static void WaitForPageLoad(int timeout)
+	public static void waitForPageLoad(int timeout)
 	{
 		new WaitForPageLoad(driver, timeout);
 	}
@@ -62,18 +62,18 @@ public class AutoAction extends Init{
 		new WaitUntilControlNotExist(driver,control,timeout);
 	}
 	
-	public static void CheckControlPosition(By control, By base_control,String position)
+	public static void checkControlPosition(By control, By base_control,String position)
 	{
-		WaitForElement(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
+		waitForElement(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
 		new CheckControlPosition(driver, control, base_control, position);
 	}
 	
-	public static void ConfirmPopup(String option)
+	public static void confirmPopup(String option)
 	{
 		new ConfirmPopup(driver,option);
 	}
 	
-	public static void CheckControlNotExist(By control) throws InterruptedException
+	public static void checkControlNotExist(By control) throws InterruptedException
 	{
 		waitUntilControlNotExist(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
 		new CheckControlNotExist(driver, control);
@@ -85,7 +85,7 @@ public class AutoAction extends Init{
 		return convert_string;
 	}
 	
-	public static void SelectSubMenuItem(By hover_control, By selected_control)
+	public static void selectSubMenuItem(By hover_control, By selected_control)
 	{
 		new SelectSubMenuItem(driver, hover_control, selected_control);
 	}

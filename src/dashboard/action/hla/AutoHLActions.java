@@ -2,7 +2,7 @@ package dashboard.action.hla;
 
 import actionBuiltIn.AutoAction;
 
-public class AutoHLActions extends AutoAction{
+public class AutoHLActions extends action_built_in.AutoAction{
 	
 	public static void LogInDashboard(String repo, String username, String password)
 	{
