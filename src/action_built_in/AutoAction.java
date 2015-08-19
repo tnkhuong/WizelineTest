@@ -7,15 +7,15 @@ public class AutoAction extends Init{
 
 	public static void navigate(String browser,String url) throws Exception
 	{
-		new StartBrowser(Init.setup(browser), url);
+		new Navigate(Init.setup(browser), url);
 	}
 
-	public static void clickObject(By control){
+	public static void click(By control){
 		waitForElement(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
 		new Click(driver, control);
 	}
 
-	public static void enterValue(By control, String value){
+	public static void enter(By control, String value){
 		waitForElement(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
 		new Enter(driver,control,value);
 	}
