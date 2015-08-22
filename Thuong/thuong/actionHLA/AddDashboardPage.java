@@ -1,13 +1,13 @@
 package thuong.actionHLA;
 
 import config.GlobalVariables;
-import object_repository.MainPage;
-import object_repository.NewPage;
+import dashboard.object_repository.MainPage_Dashboard;
+import dashboard.object_repository.NewPage_Dashboard;
 import actionBuiltIn.AutoAction;
 
 public class AddDashboardPage extends AutoAction{
-	MainPage main_page=new MainPage();
-	NewPage new_page=new NewPage();
+	MainPage_Dashboard main_page=new MainPage_Dashboard();
+	NewPage_Dashboard new_page=new NewPage_Dashboard();
 	public AddDashboardPage(String pageName,String parent_page,String display_after) throws InterruptedException{
 		 // Step	Click on Add Page icon on Main Page
 		SelectSubMenuItem(main_page.setting_link, main_page.add_page_button);

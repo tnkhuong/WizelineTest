@@ -2,13 +2,13 @@ package actionHLA;
 
 import org.openqa.selenium.WebDriver;
 
+import dashboard.object_repository.LoginPage_Dashboard;
 import actionBuiltIn.Click;
 import actionBuiltIn.Enter;
 //import actionBuiltIn.WaitForControl;
-import object_repository.LoginPage;
 
 public class HLAs{
-	LoginPage loginpage=new LoginPage();
+	LoginPage_Dashboard loginpage=new LoginPage_Dashboard();
 	public void LogInDashboard(WebDriver driver,String repository,String username, String password)
 	{
 		//WaitForControl.execute(driver, loginpage.username_textbox, 40);

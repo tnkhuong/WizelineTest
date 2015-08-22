@@ -1,9 +1,6 @@
 package testModule;
 import java.util.concurrent.TimeUnit;
 
-import object_repository.MainPage;
-import object_repository.NewPage;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.internal.MouseAction;
@@ -14,10 +11,12 @@ import com.thoughtworks.selenium.webdriven.commands.MouseEventAt;
 import actionHLA.AddPage;
 import actionHLA.AutoHLActions;
 import config.GlobalVariables;
+import dashboard.object_repository.MainPage_Dashboard;
+import dashboard.object_repository.NewPage_Dashboard;
 
 public class Temp extends AutoHLActions{
-	static MainPage mainpage = new MainPage();
-	static NewPage newPage = new NewPage();
+	static MainPage_Dashboard mainpage = new MainPage_Dashboard();
+	static NewPage_Dashboard newPage = new NewPage_Dashboard();
 	static String displayAfter = "daa";
 	static String parentPage = "";
 	static String columnNumber = "2";

@@ -1,7 +1,7 @@
-package object_repository;
+package dashboard.object_repository;
 import org.openqa.selenium.By;
 
-public class MainPage {
+public class MainPage_Dashboard {
 	public By logout_link=By.cssSelector("[href*='logout']");
 	public By add_page_button=By.cssSelector("[href*=AddPage]");
 	public By test_page_icon=By.linkText("test");

@@ -1,4 +1,4 @@
-package test_module.login;
+package dashboard.test_module.login;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;

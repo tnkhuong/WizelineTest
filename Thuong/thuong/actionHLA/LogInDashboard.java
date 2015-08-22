@@ -1,11 +1,11 @@
 package thuong.actionHLA;
 
+import dashboard.object_repository.LoginPage_Dashboard;
 import actionBuiltIn.AutoAction;
-import object_repository.LoginPage;
 
 public class LogInDashboard extends AutoAction{
 
-	static LoginPage loginpage = new LoginPage();
+	static LoginPage_Dashboard loginpage = new LoginPage_Dashboard();
 	
 	public LogInDashboard(String repo, String username, String password) {
 		SelectDropdown(loginpage.repository_combobox, repo, "text");

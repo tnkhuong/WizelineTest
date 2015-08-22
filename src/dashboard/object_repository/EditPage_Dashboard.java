@@ -1,8 +1,8 @@
-package object_repository;
+package dashboard.object_repository;
 
 import org.openqa.selenium.By;
 
-public class EditPage {
+public class EditPage_Dashboard {
 	public By editPage_title=By.cssSelector("#div_popup h2");
 	//public By editPage_title=By.cssSelector("#div_popup > div > table > tbody > tr:nth-child(1) > td.ptc > h2");
 	public By pageName_textbox=By.className("page_txt_name");

@@ -1,6 +1,4 @@
-package test_module;
-
-import object_repository.MainPage;
+package dashboard.test_module;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
@@ -8,10 +6,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 
 import config.GlobalVariables;
+import dashboard.object_repository.MainPage_Dashboard;
 import actionHLA.AutoHLActions;
 
 public class DA_MP_TO020 extends AutoHLActions{
-	MainPage main_page=new MainPage();
+	MainPage_Dashboard main_page=new MainPage_Dashboard();
   @Test
   public void DA_MP_TC020_TC() throws InterruptedException {
 	  //Set Variables

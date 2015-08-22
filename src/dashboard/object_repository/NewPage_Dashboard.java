@@ -1,8 +1,8 @@
-package object_repository;
+package dashboard.object_repository;
 
 import org.openqa.selenium.By;
 
-public class NewPage {
+public class NewPage_Dashboard {
 	public By page_name_textbox=By.className("page_txt_name");
 	public By ok_button=By.id("OK");
 	public By display_after_combobox=By.id("afterpage");

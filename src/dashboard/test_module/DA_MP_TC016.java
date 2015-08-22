@@ -1,6 +1,4 @@
-package test_module;
-
-import object_repository.MainPage;
+package dashboard.test_module;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
@@ -8,9 +6,10 @@ import org.testng.annotations.AfterMethod;
 
 import actionHLA.AutoHLActions;
 import config.GlobalVariables;
+import dashboard.object_repository.MainPage_Dashboard;
 
 public class DA_MP_TC016 extends AutoHLActions{
-	MainPage main_page=new MainPage();
+	MainPage_Dashboard main_page=new MainPage_Dashboard();
   @Test
   public void DA_MP_TC016_TC() throws InterruptedException {
 	 // Step	Log in specific repository with valid account

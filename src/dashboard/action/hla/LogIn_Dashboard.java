@@ -1,13 +1,13 @@
 package dashboard.action.hla;
 
+import dashboard.object_repository.LoginPage_Dashboard;
 import actionBuiltIn.AutoAction;
-import object_repository.LoginPage;
 
-public class LogInDashboard extends AutoAction{
+public class LogIn_Dashboard extends AutoAction{
 
-	static LoginPage loginpage = new LoginPage();
+	static LoginPage_Dashboard loginpage = new LoginPage_Dashboard();
 	
-	public LogInDashboard(String repo, String username, String password) {
+	public LogIn_Dashboard(String repo, String username, String password) {
 		SelectDropdown(loginpage.repository_combobox, repo, "text");
 		enterValue(loginpage.username_textbox, username);
 		enterValue(loginpage.password_textbox,password);

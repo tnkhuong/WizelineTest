@@ -1,15 +1,14 @@
 package testModule;
 
-import object_repository.MainPage;
-
 import org.testng.annotations.Test;
 
 import actionHLA.AutoHLActions;
 import config.GlobalVariables;
 import config.Init;
+import dashboard.object_repository.MainPage_Dashboard;
 
 public class DA_LOGIN_TC014 extends AutoHLActions{
-	static MainPage mainpage = new MainPage();
+	static MainPage_Dashboard mainpage = new MainPage_Dashboard();
 	@Test
     public void main () throws Exception{
 	  Navigate(GlobalVariables.glb_Browser,"http://localhost:54000/TADashboard/login.jsp");

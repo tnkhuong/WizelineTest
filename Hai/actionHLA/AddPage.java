@@ -2,13 +2,13 @@ package actionHLA;
 
 import org.openqa.selenium.By;
 
-import object_repository.MainPage;
-import object_repository.NewPage;
+import dashboard.object_repository.MainPage_Dashboard;
+import dashboard.object_repository.NewPage_Dashboard;
 import actionBuiltIn.AutoAction;
 
 public class AddPage extends AutoAction{
-	static MainPage mainpage = new MainPage();
-	static NewPage newPage = new NewPage();
+	static MainPage_Dashboard mainpage = new MainPage_Dashboard();
+	static NewPage_Dashboard newPage = new NewPage_Dashboard();
 	
 	public AddPage (String pageName) throws Exception{
 		By newlyAddedPage = By.partialLinkText(pageName);

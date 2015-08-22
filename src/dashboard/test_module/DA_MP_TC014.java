@@ -1,12 +1,11 @@
-package test_module;
-
-import object_repository.MainPage;
+package dashboard.test_module;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 
 import config.GlobalVariables;
+import dashboard.object_repository.MainPage_Dashboard;
 import actionHLA.AutoHLActions;
 
 public class DA_MP_TC014 extends AutoHLActions{
@@ -14,7 +13,7 @@ public class DA_MP_TC014 extends AutoHLActions{
   /*Verify when "New Page" control/form is brought up to focus all other control within
 Dashboard page is locked and disabled*/
   public void DA_MP_TC014_TC() {
-	  MainPage main_page=new MainPage();
+	  MainPage_Dashboard main_page=new MainPage_Dashboard();
 	  //S2- Login with valid account
 	  LogInDashboard(GlobalVariables.glb_Repository, GlobalVariables.glb_Username, GlobalVariables.glb_Password);
 	  //S3- Click Add Page icon	

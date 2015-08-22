@@ -1,13 +1,13 @@
 package config;
 
-import object_repository.LoginPage;
-import object_repository.MainPage;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 //import config.GlobalVariables;
+
+import dashboard.object_repository.LoginPage_Dashboard;
+import dashboard.object_repository.MainPage_Dashboard;
 
 public class Init {
      public static WebDriver driver;

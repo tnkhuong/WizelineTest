@@ -1,8 +1,5 @@
 package testModule;
 
-import object_repository.LoginPage;
-import object_repository.MainPage;
-
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -13,10 +10,13 @@ import actionHLA.AutoHLActions;
 import org.openqa.selenium.support.ui.Sleeper;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import dashboard.object_repository.LoginPage_Dashboard;
+import dashboard.object_repository.MainPage_Dashboard;
+
 public class TC_DA_LOGIN_TR013 extends AutoHLActions{
 	
-	static MainPage mainpage = new MainPage();
-	static LoginPage loginpage = new LoginPage();
+	static MainPage_Dashboard mainpage = new MainPage_Dashboard();
+	static LoginPage_Dashboard loginpage = new LoginPage_Dashboard();
 	
 	  @BeforeMethod
 	  public void beforeMethod() throws Exception {

@@ -1,7 +1,7 @@
-package object_repository;
+package dashboard.object_repository;
 import org.openqa.selenium.By;
 
-public class LoginPage {
+public class LoginPage_Dashboard {
 	public By repository_combobox=By.id("repository");
 	public By username_textbox=By.id("username");
 	public By password_textbox= By.id("password");

@@ -1,15 +1,14 @@
 package thuong.actionHLA;
 
-import object_repository.MainPage;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import config.GlobalVariables;
+import dashboard.object_repository.MainPage_Dashboard;
 import actionBuiltIn.AutoAction;
 
 public class DeletePage extends AutoAction{
-	MainPage main_page=new MainPage();
+	MainPage_Dashboard main_page=new MainPage_Dashboard();
 	public DeletePage(WebDriver driver, String page_name) throws InterruptedException
 	{
 		//String convert_name=HandleSpaceInString(page_name);

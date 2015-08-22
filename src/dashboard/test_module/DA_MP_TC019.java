@@ -1,4 +1,4 @@
-package test_module;
+package dashboard.test_module;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
