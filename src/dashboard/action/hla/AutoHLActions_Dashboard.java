@@ -2,7 +2,7 @@ package dashboard.action.hla;
 
 import actionBuiltIn.AutoAction;
 
-public class AutoHLActions extends action_built_in.AutoAction{
+public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
 	
 	public static void LogInDashboard(String repo, String username, String password)
 	{
@@ -10,7 +10,7 @@ public class AutoHLActions extends action_built_in.AutoAction{
 	}
 	public static void AddDashboardPage(String pageName,String parent_page,String display_after) throws InterruptedException
 	{
-		new AddDashboardPage(pageName,parent_page,display_after);
+		new AddPage_Dashboard(pageName,parent_page,display_after);
 	}
 	public static void DeletePage(String page_name) throws InterruptedException
 	{

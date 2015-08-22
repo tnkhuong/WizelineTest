@@ -5,10 +5,10 @@ import object_repository.MainPage;
 import object_repository.NewPage;
 import actionBuiltIn.AutoAction;
 
-public class AddDashboardPage extends AutoHLActions{
+public class AddPage_Dashboard extends AutoHLActions_Dashboard{
 	MainPage main_page=new MainPage();
 	NewPage new_page=new NewPage();
-	public AddDashboardPage(String pageName,String parent_page,String display_after) throws InterruptedException{
+	public AddPage_Dashboard(String pageName,String parent_page,String display_after) throws InterruptedException{
 		 // Step	Click on Add Page icon on Main Page
 		selectSubMenuItem(main_page.setting_link, main_page.add_page_button);
 		 // Step	Enter Page Name field
