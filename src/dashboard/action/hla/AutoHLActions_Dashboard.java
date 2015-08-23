@@ -1,6 +1,6 @@
 package dashboard.action.hla;
 
-import actionBuiltIn.AutoAction;
+import org.openqa.selenium.By;
 
 public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
 	
@@ -15,5 +15,9 @@ public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
 	public static void DeletePage(String page_name) throws InterruptedException
 	{
 		new DeletePage_Dashboard(driver,page_name);
+	}
+	public static void SelectSubMenuItem(By hover_control, By selected_control)
+	{
+		new SelectSubMenuItem(driver, hover_control, selected_control);
 	}
 }

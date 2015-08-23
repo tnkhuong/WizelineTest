@@ -1,5 +1,6 @@
 package action_built_in;
 import org.openqa.selenium.By;
+
 import config.GlobalVariables;
 import config.Init;
 
@@ -8,6 +9,7 @@ public class AutoAction extends Init{
 	public static void navigate(String browser,String url) throws Exception
 	{
 		new Navigate(Init.setup(browser), url);
+		waitForPageLoad(GlobalVariables.DEFAULT_WAIT_4_PAGE);
 	}
 
 	public static void click(By control){
@@ -68,7 +70,7 @@ public class AutoAction extends Init{
 		new CheckControlPosition(driver, control, base_control, position);
 	}
 	
-	public static void confirmPopup(String option)
+	public static void confirmPopup(String option) throws InterruptedException
 	{
 		new ConfirmPopup(driver,option);
 	}
@@ -83,11 +85,6 @@ public class AutoAction extends Init{
 	{
 		String convert_string=string_name.replace(" ","\u00a0");
 		return convert_string;
-	}
-	
-	public static void selectSubMenuItem(By hover_control, By selected_control)
-	{
-		new SelectSubMenuItem(driver, hover_control, selected_control);
 	}
 	
 	public static void getcontrolcoordinate(By control,int returnx, int returny)
