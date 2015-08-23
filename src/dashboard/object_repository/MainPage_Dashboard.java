@@ -13,4 +13,6 @@ public class MainPage_Dashboard {
 	public By overview_page_icon=By.linkText("Overview");
 	public By setting_link= By.className("mn-setting");
 	public By administer_link=By.cssSelector("a[href='#Administer']");
+	public By choose_panel_button= By.id("btnChoosepanel");
+	public By create_new_panel_button= By.cssSelector("span[onclick*='Dashboard.openAddPanel']");
 }

@@ -8,8 +8,9 @@ import org.testng.Assert;
 public class CheckControlStatus {
 
 		/**
-		 * Description: this action is used to check whether element is exist or not
+		 * Description: this action is used to check whether element is enabled or disabled
 		 * @param control is object
+		 * @param status: true or false
 		 * @return None
 		 * @author Khuong Truong
 		 * @throws InterruptedException 
@@ -22,7 +23,7 @@ public class CheckControlStatus {
 			Assert.assertEquals(exist, true);
 		}*/
 		
-		public CheckControlStatus(WebDriver driver,By control, String status)
+		public CheckControlStatus(WebDriver driver,By control, boolean status)
 		{	
 			WebElement element=driver.findElement(control);
 			boolean exist= element.isEnabled();

@@ -93,6 +93,10 @@ public class AutoAction extends Init{
 		returnx=test.x1;
 		returny=test.y1;		
 	}
+	public static void checkControlStatus(By control,Boolean status)
+	{
+		new CheckControlStatus(driver, control, status);
+	}
 }
 
 
