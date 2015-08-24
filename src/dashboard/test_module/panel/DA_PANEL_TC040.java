@@ -19,11 +19,11 @@ public class DA_PANEL_TC040 extends AutoHLActions_Dashboard{
 	  //Step 2	Select a specific repository 
 	  //Step 3	Enter valid Username and Password
 	  //Step 4	Click 'Login' button
-	  LogInDashboard(GlobalVariables.glb_Repository, GlobalVariables.glb_Username, GlobalVariables.glb_Password);
+	  logInDashboard(GlobalVariables.glb_Repository, GlobalVariables.glb_Username, GlobalVariables.glb_Password);
 	  //Step 5	Click 'Add Page' button
 	  //Step 6	Enter Page Name = main_hung
 	  //Step 7	Click 'OK' button
-	  AddDashboardPage("main_hung","","");
+	  addDashboardPage("main_hung","","");
 	  //Step 8	Click 'Choose Panels' button below 'main_hung' button
 	  click(main_page.choose_panel_button);
 	  //Step 9	Click 'Create new panel' button
@@ -70,7 +70,7 @@ public class DA_PANEL_TC040 extends AutoHLActions_Dashboard{
   public void afterClass() throws InterruptedException {
 	  click(addnewpanel_page.cancel_button);
 	  waitUntilControlNotExist(addnewpanel_page.cancel_button, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
-	  DeletePage("main_hung");
+	  deletePage("main_hung");
 	  exitPage();
   }
 }

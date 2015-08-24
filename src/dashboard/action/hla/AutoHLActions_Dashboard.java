@@ -8,15 +8,15 @@ public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
 	{
 		new LogIn_Dashboard(repo, username, password);
 	}
-	public static void AddDashboardPage(String pageName,String parent_page,String display_after) throws InterruptedException
+	public static void addDashboardPage(String pageName,String parent_page,String display_after) throws InterruptedException
 	{
 		new AddPage_Dashboard(pageName,parent_page,display_after);
 	}
-	public static void DeletePage(String page_name) throws InterruptedException
+	public static void deletePage(String page_name) throws InterruptedException
 	{
 		new DeletePage_Dashboard(driver,page_name);
 	}
-	public static void SelectSubMenuItem(By hover_control, By selected_control)
+	public static void selectSubMenuItem(By hover_control, By selected_control)
 	{
 		new SelectSubMenuItem(driver, hover_control, selected_control);
 	}

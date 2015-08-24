@@ -5,22 +5,22 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import config.GlobalVariables;
-import actionBuiltIn.AutoAction;
-import actionHLA.AutoHLActions;
-public class DA_LOGIN_TC002 extends AutoHLActions {
+import dashboard.action.hla.AutoHLActions_Dashboard;
+
+public class DA_LOGIN_TC002 extends AutoHLActions_Dashboard {
   @Test
   public void f() throws Exception {
-	  LogIn("http://localhost:54000/TADashboard/login.jsp", "SampleRepository", "test", "123");
-	  CheckPopUpMessage("Username or password is invalid","yes");
-	  
+	  logInDashboard("SampleRepository", "test", "123");
+	  checkPopUpMessage("Username or password is invalid");
+	  confirmPopup("yes");
   }
   @BeforeMethod
   public void beforeMethod() throws Exception {
-	  //Navigate(GlobalVariables.glb_Browser,GlobalVariables.glb_Url);
+	  navigate(GlobalVariables.glb_Browser,GlobalVariables.glb_Url);
   }
 
   @AfterMethod
   public void afterMethod() {
-	  ExitDashboard();
+	  exitPage();
   }
 }

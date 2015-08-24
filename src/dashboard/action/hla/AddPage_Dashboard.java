@@ -9,7 +9,7 @@ public class AddPage_Dashboard extends AutoHLActions_Dashboard{
 	NewPage_Dashboard new_page=new NewPage_Dashboard();
 	public AddPage_Dashboard(String pageName,String parent_page,String display_after) throws InterruptedException{
 		 // Step	Click on Add Page icon on Main Page
-		SelectSubMenuItem(main_page.setting_link, main_page.add_page_button);
+		selectSubMenuItem(main_page.setting_link, main_page.add_page_button);
 		 // Step	Enter Page Name field
 		enter(new_page.page_name_textbox,pageName);
 		// Step		Select value for parent page dropdown list
