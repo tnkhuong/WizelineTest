@@ -23,7 +23,7 @@ public class DA_PANEL_TC040 extends AutoHLActions_Dashboard{
 	  //Step 5	Click 'Add Page' button
 	  //Step 6	Enter Page Name = main_hung
 	  //Step 7	Click 'OK' button
-	  AddDashboardPage("c","","");
+	  AddDashboardPage("main_hung","","");
 	  //Step 8	Click 'Choose Panels' button below 'main_hung' button
 	  click(main_page.choose_panel_button);
 	  //Step 9	Click 'Create new panel' button

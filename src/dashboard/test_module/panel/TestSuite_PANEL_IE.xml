@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestSuite" thread-count="3"  parallel="tests" >
-  <test name="IETest">
+<suite name="TestSuite" parallel="none">
+  <test name="FirefoxTest">
   <parameter name="browser" value="ie" />
-    <classes>
+ 	<classes>
        <class name="dashboard.test_module.panel.DA_PANEL_TC040" />
-       </class>
     </classes>
   </test>
  </suite>
