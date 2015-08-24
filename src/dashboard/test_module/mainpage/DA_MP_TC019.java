@@ -19,17 +19,17 @@ public class DA_MP_TC019 extends dashboard.action.hla.AutoHLActions_Dashboard {
 	@Test
     public void main () throws Exception{
 	  navigate(GlobalVariables.glb_Browser,GlobalVariables.glb_Url);
-	  LogInDashboard(GlobalVariables.glb_Repository, GlobalVariables.glb_Username, GlobalVariables.glb_Password);
-	  AddDashboardPage("test","","");
-	  AddDashboardPage("Another test","test","");
+	  logInDashboard(GlobalVariables.glb_Repository, GlobalVariables.glb_Username, GlobalVariables.glb_Password);
+	  addDashboardPage("test","","");
+	  addDashboardPage("Another test","test","");
 	  // Edit Test page
 	  click(testPage);
 	  waitForPageLoad(20000);
 	  click(mainpage.setting_link);
-	  click(mainpage.edit);
+	  click(mainpage.edit_page_button);
 	  waitForElement(editPage.editPage_title, 10000);
 	  System.out.println(driver.findElement(editPage.editPage_title).getText());
-	  driver.findElement(editPage.editPage_title).	  
+	  //driver.findElement(editPage.editPage_title).	  
 	  //CheckControlExist(editPage.editPage_title);
 	  /* Edit Another page
 	  Click(anotherPage);

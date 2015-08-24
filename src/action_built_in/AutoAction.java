@@ -1,4 +1,5 @@
 package action_built_in;
+
 import org.openqa.selenium.By;
 
 import config.GlobalVariables;
@@ -96,6 +97,11 @@ public class AutoAction extends Init{
 	public static void checkControlStatus(By control,Boolean status)
 	{
 		new CheckControlStatus(driver, control, status);
+	}
+	
+	public static void moveMouse(By control){
+		waitForElement(control, 10);
+		new MoveMouse(driver,control);
 	}
 }
 

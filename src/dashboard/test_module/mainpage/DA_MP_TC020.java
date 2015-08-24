@@ -17,17 +17,17 @@ public class DA_MP_TC020 extends AutoHLActions_Dashboard{
 	 // String child_page_control="//a[text()='test']/following-sibling::ul/li/a";
 	  //Step 1	Navigate to Dashboard login page
 	  //Step 2	Log in specific repository with valid account
-	  LogInDashboard(GlobalVariables.glb_Repository, GlobalVariables.glb_Username, GlobalVariables.glb_Password);
+	  logInDashboard(GlobalVariables.glb_Repository, GlobalVariables.glb_Username, GlobalVariables.glb_Password);
 	  waitForElement(main_page.setting_link, 100);
 	  //Step 3	Add a new parent page
-	  AddDashboardPage("test","","");
+	  addDashboardPage("test","","");
 	  waitForElement(main_page.test_page_icon, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
 	  //Step 4	Add a children page of newly added page
-	  AddDashboardPage("test child","test","");
+	  addDashboardPage("test child","test","");
 	  //Step 5	Click on parent page
 	  click(main_page.test_page_icon);
 	  //Step 6	Click "Delete this page" icon
-	  SelectSubMenuItem(main_page.setting_link, main_page.delete_page_button);
+	  selectSubMenuItem(main_page.setting_link, main_page.delete_page_button);
 	  //VP	Check confirm message "Are you sure you want to remove this page?" appears
 	  checkPopUpMessage("Are you sure you want to remove this page?");
 	  //Step 7	Click OK button
@@ -37,9 +37,9 @@ public class DA_MP_TC020 extends AutoHLActions_Dashboard{
 	  //Step 8	Click OK button
 	  confirmPopup("yes");
 	  //Step 9	Click on  children page
-	  SelectSubMenuItem(main_page.test_page_icon,main_page.test_child_page_icon);
+	  selectSubMenuItem(main_page.test_page_icon,main_page.test_child_page_icon);
 	  //Step 10	Click "Delete this page" icon
-	  SelectSubMenuItem(main_page.setting_link, main_page.delete_page_button);
+	  selectSubMenuItem(main_page.setting_link, main_page.delete_page_button);
 	  //VP	Check confirm message "Are you sure you want to remove this page?" appears
 	  checkPopUpMessage("Are you sure you want to remove this page?");
 	  //Step 11	Click OK button
@@ -49,7 +49,7 @@ public class DA_MP_TC020 extends AutoHLActions_Dashboard{
 	  //Step 12	Click on  parent page
 	  click(main_page.test_page_icon);
 	  //Step 13	Click "Delete this page" icon
-	  SelectSubMenuItem(main_page.setting_link, main_page.delete_page_button);
+	  selectSubMenuItem(main_page.setting_link, main_page.delete_page_button);
 	  //VP	Check confirm message "Are you sure you want to remove this page?" appears
 	  checkPopUpMessage("Are you sure you want to remove this page?");
 	  //Step 14	Click OK button
