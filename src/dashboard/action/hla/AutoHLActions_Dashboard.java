@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 
 public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
 	
-	public static void LogInDashboard(String repo, String username, String password)
+	public static void logInDashboard(String repo, String username, String password)
 	{
 		new LogIn_Dashboard(repo, username, password);
 	}
