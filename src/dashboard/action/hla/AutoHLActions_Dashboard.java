@@ -20,4 +20,12 @@ public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
 	{
 		new SelectSubMenuItem(driver, hover_control, selected_control);
 	}
+	public static void AddDashboardPanel (String display_name)
+	{
+		new AddPanel_Dashboard(display_name);
+	}
+	public static void CheckPanelInfo(String[] list_panel_info)
+	{
+		new CheckPanelInfo(list_panel_info);
+	}
 }
