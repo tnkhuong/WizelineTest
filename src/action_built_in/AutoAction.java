@@ -101,10 +101,12 @@ public class AutoAction extends Init{
 		waitForElement(control, 10);
 		new MoveMouse(driver,control);
 	}
+	
 	public static void checkSelectedValue( By control,String expected_value)
 	{
 		new CheckSelectedValue(driver, control, expected_value);
 	}
+	
 	public static void checkControlProperty(By control,String property, String expected)
 	{
 		new CheckControlProperty(driver, control, property, expected);
