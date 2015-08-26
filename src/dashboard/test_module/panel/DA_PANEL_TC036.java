@@ -14,7 +14,7 @@ public class DA_PANEL_TC036 extends AutoHLActions_Dashboard {
   
 
   @Test
-  public void DA_PANEL_TC040_TC() {
+  public void DA_PANEL_TC036_TC() {
 	  //Step 1: Click on Administer/Panels link
 	  //Step 2: Click on Add new link
 	  //VP: Verify Data Profile list is in alphabetical order
