@@ -11,9 +11,10 @@ import org.openqa.selenium.WebElement;
  * @author Hai Vu
  */
 public class Set {
-	public Set (WebDriver driver,By control,Boolean value){
+	public Set (WebDriver driver,By control,String value){
 		WebElement element=driver.findElement(control);
-		  if ((!element.isSelected() && value==true)||(element.isSelected() && value==false))
+		String checkbox_status=element.getAttribute("checked");
+		  if (value!=checkbox_status)
 		  {
 		       element.click();
 		  }	

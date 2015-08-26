@@ -1,5 +1,4 @@
 package dashboard.action.hla;
-
 import org.openqa.selenium.By;
 
 public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
@@ -20,11 +19,11 @@ public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
 	{
 		new SelectSubMenuItem(driver, hover_control, selected_control);
 	}
-	public static void AddDashboardPanel (String display_name)
+	public static void addDashboardPanel (String display_name, String series_value)
 	{
-		new AddPanel_Dashboard(display_name);
+		new AddPanel_Dashboard(display_name,series_value);
 	}
-	public static void CheckPanelInfo(String[] list_panel_info)
+	public static void checkPanelInfo(String[] list_panel_info)
 	{
 		new CheckPanelInfo(list_panel_info);
 	}

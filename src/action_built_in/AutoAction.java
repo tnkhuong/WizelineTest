@@ -1,5 +1,4 @@
 package action_built_in;
-
 import org.openqa.selenium.By;
 import config.GlobalVariables;
 import config.Init;

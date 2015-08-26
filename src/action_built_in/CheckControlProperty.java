@@ -1,10 +1,8 @@
 package action_built_in;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-
 import config.GlobalVariables;
 
 public class CheckControlProperty {
@@ -18,25 +16,34 @@ public class CheckControlProperty {
 	 */
 	public CheckControlProperty(WebDriver driver, By control, String property,String expected)
 	{
+		//Set variables
+		boolean expected_status = false;
+		if(expected=="false")
+			expected_status=false;
+		else if(expected=="true")
+			expected_status= true;
+		//main steps
 		new WaitForControl(driver, control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
 		WebElement element=driver.findElement(control);
+		System.out.println("control:" +control);
 		if(property.equalsIgnoreCase("enabled"))
 		{
 			boolean exist= element.isEnabled();
-			Assert.assertTrue(exist, expected);
+			Assert.assertEquals(exist, expected_status);
 		}
 		else if(property.equalsIgnoreCase("value"))
 		{
 			String value=element.getText();
-			Assert.assertEquals(value, expected);	
+			System.out.println("expected property value:" + expected +", actual value:"+ value);
+			Assert.assertEquals(value.trim(), expected.trim());
 		}
 		else if(property.equalsIgnoreCase("isSelected"))
 		{
-			boolean selected= element.isSelected();
-			System.out.println(selected);
-			Assert.assertTrue(selected, expected);
+			boolean status=element.isSelected();
+			System.out.println("expected property value:" + expected +", actual value:"+ status);
+			Assert.assertEquals(status, expected_status);
 		}
-		System.out.print("control:" +control+",expected property value:" + expected);
+
 	}
 
 }
