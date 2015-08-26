@@ -32,32 +32,32 @@ public class DA_PANEL_TC040 extends AutoHLActions_Dashboard{
 	  //Step 11	Select 'Pie' Chart Type
 	  selectDropdown(addnewpanel_page.chart_type_combobox,"Pie", "text");
 	  //VP	Check that 'Category' is disabled, 'Series' is enabled
-	  checkControlStatus(addnewpanel_page.category_combobox, false);
-	  checkControlStatus(addnewpanel_page.series_combobox, true);
+	  checkControlProperty(addnewpanel_page.category_combobox,"enabled","false");
+	  checkControlProperty(addnewpanel_page.series_combobox,"enabled","true");
 	  //Step 12	Click 'Chart Type' drop-down menu
 	  //Step 13	Select 'Single Bar' Chart Type
 	  selectDropdown(addnewpanel_page.chart_type_combobox,"Single Bar", "text");
 	  //VP	Check that 'Category' is disabled, 'Series' is enabled
-	  checkControlStatus(addnewpanel_page.category_combobox, false);
-	  checkControlStatus(addnewpanel_page.series_combobox, true);
+	  checkControlProperty(addnewpanel_page.category_combobox,"enabled","false");
+	  checkControlProperty(addnewpanel_page.series_combobox,"enabled","true");
 	  //Step 14	Click 'Chart Type' drop-down menu
 	  //Step 15	Select 'Stacked Bar' Chart Type
 	  selectDropdown(addnewpanel_page.chart_type_combobox,"Stacked Bar", "text");
 	  //VP	Check that 'Category' ,'Series' are enabled
-	  checkControlStatus(addnewpanel_page.category_combobox, true);
-	  checkControlStatus(addnewpanel_page.series_combobox, true);
+	  checkControlProperty(addnewpanel_page.category_combobox,"enabled","true");
+	  checkControlProperty(addnewpanel_page.series_combobox,"enabled","true");
 	  //Step 16	Click 'Chart Type' drop-down menu
 	  //Step 17	Select 'Group Bar' Chart Type
 	  selectDropdown(addnewpanel_page.chart_type_combobox,"Group Bar", "text");
 	  //VP	Check that 'Category' ,'Series' are enabled
-	  checkControlStatus(addnewpanel_page.category_combobox, true);
-	  checkControlStatus(addnewpanel_page.series_combobox, true);
+	  checkControlProperty(addnewpanel_page.category_combobox,"enabled","true");
+	  checkControlProperty(addnewpanel_page.series_combobox,"enabled","true");
 	  //Step 18	Click 'Chart Type' drop-down menu
 	  //Step 19	Select 'Line' Chart Type
 	  selectDropdown(addnewpanel_page.chart_type_combobox,"Line", "text");
 	//VP	Check that 'Category' ,'Series' are enabled
-	  checkControlStatus(addnewpanel_page.category_combobox, true);
-	  checkControlStatus(addnewpanel_page.series_combobox, true);
+	  checkControlProperty(addnewpanel_page.category_combobox,"enabled","true");
+	  checkControlProperty(addnewpanel_page.series_combobox,"enabled","true");
   }
   
   @BeforeClass
