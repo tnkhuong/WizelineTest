@@ -1,4 +1,5 @@
 package dashboard.test_module.panel;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -8,6 +9,7 @@ import dashboard.action.hla.AutoHLActions_Dashboard;
 import dashboard.object_repository.AddNewPanel_Dashboard;
 import dashboard.object_repository.MainPage_Dashboard;
 import dashboard.object_repository.PanelsPage_Dashboard;
+
 public class DA_PANEL_TC042 extends AutoHLActions_Dashboard{
 	MainPage_Dashboard main_page=new MainPage_Dashboard();
 	PanelsPage_Dashboard panels_page=new PanelsPage_Dashboard();
@@ -84,9 +86,9 @@ public class DA_PANEL_TC042 extends AutoHLActions_Dashboard{
 
 	@AfterClass
 	public void afterClass() throws InterruptedException {
-	  click(addnewpanel_page.cancel_button);
-	  waitUntilControlNotExist(addnewpanel_page.cancel_button, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
-	  deletePage("main_hung");
-	  exitPage();
- 	}
-}
+	 // click(addnewpanel_page.cancel_button);
+	 // waitUntilControlNotExist(addnewpanel_page.cancel_button, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
+	 // deletePage("Panel 1");
+	 // exitPage();
+	}
+ }
