@@ -15,4 +15,5 @@ public class MainPage_Dashboard {
 	public By administer_link=By.cssSelector("a[href='#Administer']");
 	public By choose_panel_button= By.id("btnChoosepanel");
 	public By create_new_panel_button= By.cssSelector("span[onclick*='Dashboard.openAddPanel']");
+	public By panels_link=By.cssSelector("a[href='panels.jsp']");
 }
