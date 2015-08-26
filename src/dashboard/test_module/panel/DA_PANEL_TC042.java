@@ -13,7 +13,7 @@ public class DA_PANEL_TC042 extends AutoHLActions_Dashboard{
 	PanelsPage_Dashboard panels_page=new PanelsPage_Dashboard();
 	AddNewPanel_Dashboard addnewpanel_page=new AddNewPanel_Dashboard();
 	@Test
-	public void DA_PANEL_TC042_TC() throws InterruptedException
+	public void DA_PANEL_TC042_TC() throws InterruptedException 
 	{
 		//Step 1	Navigate to TA Dashboard
 		//Step 2	Login with valid account
@@ -26,47 +26,44 @@ public class DA_PANEL_TC042 extends AutoHLActions_Dashboard{
 		//Step 6	Click None radio button for Legend
 		click(addnewpanel_page.none_radiobutton);
 		//VP	Observe the current page: All settings are unchanged in Add New Panel dialog
-		String[] list_panel_info_None= {"true","false","false","false","Action Implementation By Status","","",
-				"false","Pie","true","false","false","Select a field...",
-		        "false","","true","Select a field...","false","","true","false",
-		        "false","false","false","false","false","false","false"};
-		checkPanelInfo(list_panel_info_None);
+		String[] list_panel_info_None= {"true","false","false","false","Action Implementation By Status",
+				null,null,"false","Pie","true","false","false","Select a field...",
+		        "true",null,"true","Select a field...","true",null,"true","false",
+		        "false","false","false","true","false","false","false"};
+		CheckPanelInfo(list_panel_info_None);
 		//Step 7	Click Top radio button for Legend
 		click(addnewpanel_page.top_radiobutton);
 		//VP	Observe the current page: All settings are unchanged in Add New Panel dialog
 		String[] list_panel_info_Top= {"true","false","false","false","Action Implementation By Status",
-                "","","false","Pie","true","false","false","Select a field...",
-                "false","","true","Select a field...","false","","false","true",
-                "false","false","false","false","false","false","false"};
-		checkPanelInfo(list_panel_info_Top);
+                null,null,"false","Pie","true","false","false","Select a field...",
+                "true",null,"true","Select a field...","true",null,"false","true",
+                "false","false","false","true","false","false","false"};
+		CheckPanelInfo(list_panel_info_Top);
 		//Step 8	Click Right radio button for Legend
 		click(addnewpanel_page.right_radiobutton);
 		//VP	Observe the current page: All settings are unchanged in Add New Panel dialog
 		String[] list_panel_info_Right= {"true","false","false","false","Action Implementation By Status",
-                "","","false","Pie","true","false","false","Select a field...",
-                "false","","true","Select a field...","false","","false","false",
-                "true","false","false","false","false","false","false"};
-		checkPanelInfo(list_panel_info_Right);
+                null,null,"false","Pie","true","false","false","Select a field...",
+                "true",null,"true","Select a field...","true",null,"false","false",
+                "true","false","false","true","false","false","false"};
+		CheckPanelInfo(list_panel_info_Right);
 		//Step 9	Click Bottom radio button for Legend
 		click(addnewpanel_page.bottom_radiobutton);
 		//VP	Observe the current page: All settings are unchanged in Add New Panel dialog
 		String[] list_panel_info_Bottom= {"true","false","false","false","Action Implementation By Status",
-                "","","false","Pie","true","false","false","Select a field...",
-                "false","","true","Select a field...","false","","false","false",
-                "false","true","false","false","false","false","false"};
-		checkPanelInfo(list_panel_info_Bottom);
+                null,null,"false","Pie","true","false","false","Select a field...",
+                "true",null,"true","Select a field...","true",null,"false","false",
+                "false","true","false","true","false","false","false"};
+		CheckPanelInfo(list_panel_info_Bottom);
 		//Step 10	Click Left radio button for Legend
-		click(addnewpanel_page.left_radiobutton);
 		//VP	Observe the current page
 		String[] list_panel_info_Left= {"true","false","false","false","Action Implementation By Status",
-                "","","false","Pie","true","false","false","Select a field...",
-                "false","","true","Select a field...","false","","false","false",
-                "false","false","true","false","false","false","false"};
-		checkPanelInfo(list_panel_info_Left);
+                null,null,"false","Pie","true","false","false","Select a field...",
+                "true",null,"true","Select a field...","true",null,"false","false",
+                "false","false","true","true","false","false","false"};
+		CheckPanelInfo(list_panel_info_Left);
 		//Step 11	Create a new panel: Panel 1
-		addDashboardPanel("Panel 1","Name");
 		//Step 12	Click Edit Panel link
-		
 		//Step 13	Click None radio button for Legend
 		//VP	Observe the current page: All settings are unchanged in Edit New Panel dialog
 		//Step 14	Click Top radio button for Legend
@@ -87,9 +84,9 @@ public class DA_PANEL_TC042 extends AutoHLActions_Dashboard{
 
 	@AfterClass
 	public void afterClass() throws InterruptedException {
-	 // click(addnewpanel_page.cancel_button);
-	 // waitUntilControlNotExist(addnewpanel_page.cancel_button, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
-	 // deletePage("Panel 1");
-	 // exitPage();
+	  click(addnewpanel_page.cancel_button);
+	  waitUntilControlNotExist(addnewpanel_page.cancel_button, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
+	  deletePage("main_hung");
+	  exitPage();
  	}
 }
