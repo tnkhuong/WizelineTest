@@ -91,5 +91,5 @@ public class DA_PANEL_TC042 extends AutoHLActions_Dashboard{
 	 // waitUntilControlNotExist(addnewpanel_page.cancel_button, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
 	 // deletePage("Panel 1");
 	 // exitPage();
+		}
  	}
-}
