@@ -118,15 +118,13 @@ public class AutoAction extends Init{
 	public static int getNumberItemsFromDropDown(By control)
 	{
 		waitForElement(control, 10);
-		GetNumberListItemsFromDropDown getnumber = new GetNumberListItemsFromDropDown(driver, control);
-		return getnumber.number;
+		return GetNumberListItemsFromDropDown.number;
 	}
 	
 	public static ArrayList<String> getListItemsFromDropDown(By control)
 	{
 		waitForElement(control, 10);
-		GetNumberListItemsFromDropDown getlist = new GetNumberListItemsFromDropDown(driver, control);
-		return getlist.list;
+		return GetNumberListItemsFromDropDown.list;
 	}
 }
 
