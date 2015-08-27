@@ -1,5 +1,8 @@
 package action_built_in;
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
+
 import config.GlobalVariables;
 import config.Init;
 
@@ -110,6 +113,20 @@ public class AutoAction extends Init{
 	public static void checkControlProperty(By control,String property, String expected)
 	{
 		new CheckControlProperty(driver, control, property, expected);
+	}
+	
+	public static int getNumberItemsFromDropDown(By control)
+	{
+		waitForElement(control, 10);
+		GetNumberListItemsFromDropDown getnumber = new GetNumberListItemsFromDropDown(driver, control);
+		return getnumber.number;
+	}
+	
+	public static ArrayList<String> getListItemsFromDropDown(By control)
+	{
+		waitForElement(control, 10);
+		GetNumberListItemsFromDropDown getlist = new GetNumberListItemsFromDropDown(driver, control);
+		return getlist.list;
 	}
 }
 
