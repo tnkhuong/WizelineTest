@@ -33,7 +33,7 @@ public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
 		new CheckPanelInfo(list_panel_info);
 	}
 	
-	public static void selectActionBasedPanelName_Dashboard(String panel_name,String link_name)
+	public static void selectActionBasedPanelName_Dashboard(String panel_name,String link_name) throws InterruptedException
 	{
 		new SelectActionBasedPanelName_Dashboard(panel_name,link_name);
 	}
