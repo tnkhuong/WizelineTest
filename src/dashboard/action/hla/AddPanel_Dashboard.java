@@ -11,7 +11,7 @@ public class AddPanel_Dashboard extends AutoHLActions_Dashboard{
 		if(!display_name.isEmpty())
 			enter(addnewpanel_page.display_name_textbox, display_name);
 		if(!series_name.isEmpty())
-			selectDropdown(addnewpanel_page.series_combobox, series_name, "text");
+			selectDropdown(addnewpanel_page.series_combobox, series_name, "value");
 		click(addnewpanel_page.ok_button);
 	}
 

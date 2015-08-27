@@ -35,8 +35,16 @@ public class CheckControlProperty {
 		else if(property.equalsIgnoreCase("value"))
 		{
 			String value=element.getText();
-			System.out.println("expected property value:" + expected +", actual value:"+ value);
-			Assert.assertEquals(value.trim(), expected.trim());
+			if(!value.isEmpty())
+			{
+				System.out.println("expected property value:" + expected +", actual value:"+ value);
+				Assert.assertEquals(value.trim(), expected.trim());
+			}
+			else
+			{
+				System.out.println("expected property value:" + expected +", actual value:"+ element.getAttribute(property));
+				Assert.assertEquals(element.getAttribute(property).trim(), expected.trim());
+			}
 		}
 		else if(property.equalsIgnoreCase("isSelected"))
 		{

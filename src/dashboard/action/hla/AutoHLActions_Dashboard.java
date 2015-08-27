@@ -32,4 +32,16 @@ public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
 	{
 		new CheckPanelInfo(list_panel_info);
 	}
+	public static void selectActionBasedPanelName_Dashboard(String panel_name,String link_name)
+	{
+		new SelectActionBasedPanelName_Dashboard(panel_name,link_name);
+	}
+	public static void checkEditPanelPageInfo_Dashboard(String[] list_edit_panel_info)
+	{
+		new CheckEditPanelPageInfo_Dashboard(list_edit_panel_info);
+	}
+	public static void deletePanel_Dashboard(String panel_name) throws InterruptedException
+	{
+		new DeletePanel_Dashboard(panel_name);
+	}
 }
