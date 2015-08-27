@@ -10,7 +10,7 @@ public class SelectActionBasedPanelName_Dashboard extends action_built_in.AutoAc
 		if(!link_name.isEmpty())
 			if(link_name.equalsIgnoreCase("Edit"))
 				click(By.xpath(xpath_text_edit));
-			else if (link_name=="Delete")
+			else if (link_name.equalsIgnoreCase("Delete"))
 				click(By.xpath(xpath_text_delete));
 			else
 				System.out.print("input wrong value for link_name");
