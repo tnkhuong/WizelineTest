@@ -4,8 +4,7 @@
   <test name="FirefoxTest">
   <parameter name="browser" value="firefox" />
  	<classes>
- 	   <class name="dashboard.test_module.panel.DA_PANEL_TC040" />
-       <class name="dashboard.test_module.panel.DA_PANEL_TC042" />
+ 	   <class name="dashboard.test_module.panel.DA_PANEL_TC045" />
     </classes>
   </test>
  </suite>
