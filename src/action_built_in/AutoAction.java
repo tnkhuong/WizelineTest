@@ -236,7 +236,8 @@ public class AutoAction extends Init{
 	public static int getNumberItemsFromDropDown(By control)
 	{
 		waitForElement(control, 10);
-		return GetNumberListItemsFromDropDown.number;
+		GetNumberListItemsFromDropDown getnumber = new GetNumberListItemsFromDropDown(driver, control);
+		return getnumber.number;
 	}
 	
 	/**
@@ -249,7 +250,8 @@ public class AutoAction extends Init{
 	public static ArrayList<String> getListItemsFromDropDown(By control)
 	{
 		waitForElement(control, 10);
-		return GetNumberListItemsFromDropDown.list;
+		GetNumberListItemsFromDropDown getlist = new GetNumberListItemsFromDropDown(driver, control);
+		return getlist.list;
 	}
 	
 	/**
@@ -259,10 +261,10 @@ public class AutoAction extends Init{
 	 * @return None
 	 * @author Thuong Le
 	 */
-	//public static void checkListItemsExist(By list_control, String[] list_item)
-	//{
-	//	new CheckListItemsExist(driver, list_control, list_item );
-	//}
+	public static void checkListItemsExist(By list_control, String[] list_item)
+	{
+		new CheckListItemsExist(driver, list_control, list_item );
+	}
 }
 
 
