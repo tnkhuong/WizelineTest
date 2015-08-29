@@ -57,13 +57,13 @@ public class DA_PANEL_TC036 extends AutoHLActions_Dashboard {
   
   @BeforeTest
   public void beforeTest() throws Exception {
-	  navigate("firefox",GlobalVariables.glb_Url);
+	  navigate("chrome",GlobalVariables.glb_Url);
 	  logInDashboard(GlobalVariables.glb_Repository, GlobalVariables.glb_Username, GlobalVariables.glb_Password);
   }
 
   @AfterTest
   public void afterTest() throws InterruptedException {
-	  selectActionBasedPanelName_Dashboard("giang-panels", "delete");
+	  deletePanel_Dashboard("giang-panels");
 	  exitPage();
   }
 }

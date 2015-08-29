@@ -13,7 +13,6 @@ public class SelectActionBasedPanelName_Dashboard extends action_built_in.AutoAc
 			else if (link_name.equalsIgnoreCase("Delete"))
 				{
 					click(By.xpath(xpath_text_delete));
-					confirmPopup("yes");
 				}
 
 			else

@@ -259,10 +259,10 @@ public class AutoAction extends Init{
 	 * @return None
 	 * @author Thuong Le
 	 */
-	public static void checkListItemsExist(By list_control, String[] list_item)
-	{
-		new CheckListItemsExist(driver, list_control, list_item );
-	}
+	//public static void checkListItemsExist(By list_control, String[] list_item)
+	//{
+	//	new CheckListItemsExist(driver, list_control, list_item );
+	//}
 }
 
 
