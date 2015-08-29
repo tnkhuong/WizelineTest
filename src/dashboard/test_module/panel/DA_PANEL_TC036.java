@@ -27,7 +27,7 @@ public class DA_PANEL_TC036 extends AutoHLActions_Dashboard {
 	EditPanelPage_Dashboard edit_panel_page=new EditPanelPage_Dashboard();
 	
   @Test
-  public void DA_PANEL_TC036_TC() {
+  public void DA_PANEL_TC036_TC() throws InterruptedException {
 		  
 	  //Step 1: Click on Administer/Panels link
 	  selectSubMenuItem(main_page.administer_link, main_page.panels_link);	  
@@ -62,7 +62,7 @@ public class DA_PANEL_TC036 extends AutoHLActions_Dashboard {
   }
 
   @AfterTest
-  public void afterTest() {
+  public void afterTest() throws InterruptedException {
 	  selectActionBasedPanelName_Dashboard("giang-panels", "delete");
 	  exitPage();
   }
