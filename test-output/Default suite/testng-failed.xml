@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="dashboard.test_module.panel.DA_PANEL_TC042">
+      <class name="dashboard.test_module.panel.DA_PANEL_TC045">
         <methods>
-          <include name="DA_PANEL_TC042_TC"/>
+          <include name="DA_PANEL_TC045_TC"/>
         </methods>
-      </class> <!-- dashboard.test_module.panel.DA_PANEL_TC042 -->
+      </class> <!-- dashboard.test_module.panel.DA_PANEL_TC045 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
