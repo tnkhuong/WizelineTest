@@ -1,7 +1,10 @@
 package action_built_in;
 
 import java.util.ArrayList;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+
 import config.GlobalVariables;
 import config.Init;
 
@@ -264,6 +267,31 @@ public class AutoAction extends Init{
 	public static void checkListItemsExist(By list_control, String[] list_item)
 	{
 		new CheckListItemsExist(driver, list_control, list_item );
+	}
+	/**
+	 * Description: this action is used to check if control exist (visible) or not.
+	 * @param control is WebDriver element
+	 * @return boolean
+	 * @author Hai Vu
+	 */
+	public static boolean doesControlExist (By control){
+		try {
+			driver.findElement(control);
+			return true;
+		}
+		catch (NoSuchElementException e) {
+			return false;
+		}
+	}
+	/**
+	 * Description: this action is used to set value for a checkbox.
+	 * @param control is WebDriver element
+	 * @return None
+	 * @author Hai Vu
+	 */
+	public static void set(By control, Boolean value){
+		waitForElement(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
+		new Set(driver,control,value);
 	}
 }
 
