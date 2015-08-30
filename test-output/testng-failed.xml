@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [TestSuite]" parallel="none">
-  <parameter name="browser" value="ie"/>
-  <test name="FirefoxTest(failed)" parallel="none">
-    <parameter name="browser" value="ie"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="dashboard.test_module.panel.DA_PANEL_TC042">
+      <class name="dashboard.test_module.panel.DA_PANEL_TC041">
         <methods>
-          <include name="DA_PANEL_TC042_TC"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="DA_PANEL_TC041_TC"/>
         </methods>
-      </class> <!-- dashboard.test_module.panel.DA_PANEL_TC042 -->
-      <class name="dashboard.test_module.panel.DA_PANEL_TC040">
-        <methods>
-          <include name="afterClass"/>
-          <include name="DA_PANEL_TC040_TC"/>
-          <include name="beforeClass"/>
-        </methods>
-      </class> <!-- dashboard.test_module.panel.DA_PANEL_TC040 -->
+      </class> <!-- dashboard.test_module.panel.DA_PANEL_TC041 -->
     </classes>
-  </test> <!-- FirefoxTest(failed) -->
-</suite> <!-- Failed suite [TestSuite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
