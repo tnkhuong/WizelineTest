@@ -265,6 +265,18 @@ public class AutoAction extends Init{
 	{
 		new CheckListItemsExist(driver, list_control, list_item );
 	}
+	
+	/**
+	 * Description: this action is used to set value into checkbox
+	 * @param control is object
+	 * @param value is text will set for checkbox
+	 * @return None
+	 * @author Hai Vu
+	 */
+	public static void set(By control, boolean value)
+	{
+		new Set(driver, control, value );
+	}
 }
 
 
