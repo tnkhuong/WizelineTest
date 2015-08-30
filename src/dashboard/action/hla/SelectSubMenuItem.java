@@ -14,6 +14,7 @@ public class SelectSubMenuItem extends action_built_in.AutoAction{
 		WebElement hover_element=driver.findElement(hover_control);
 		Actions action=new Actions(driver);
 		action.moveToElement(hover_element).perform();
+		new WaitForControl(driver, selected_control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
 		click(selected_control);
 	}
 

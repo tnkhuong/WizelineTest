@@ -1,10 +1,5 @@
 package dashboard.test_module.panel;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
