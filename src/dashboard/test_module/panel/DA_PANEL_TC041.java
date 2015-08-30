@@ -29,7 +29,7 @@ public class DA_PANEL_TC041 extends AutoHLActions_Dashboard {
 	//Step 2: Select a specific repository (SampleRepository)
 	//Step 3: Enter valid Username and Password (adminstrator/(blank))
 	//Step 4: Click 'Login' button
-	  deletePage(page_name);
+	  //deletePage(page_name);
 	  
 	//Step 5: Click 'Add Page' button
 	//Step 6: Enter Page Name (main_hung)
@@ -94,29 +94,30 @@ public class DA_PANEL_TC041 extends AutoHLActions_Dashboard {
 	  click(panel_configuration.ok_button);
 	  
 	//Step 22: Click 'Edit Panel' button of panel 'hung_panel'
-	  selectSubMenuItem(main_page.setting_link, main_page.edit_page_button);
+	  click(main_page.edit_panel_link);
 	  
 	//Step 23: Select 'Style' radio button (3D)
-	  set(addnewpanel_page.style_3D_radiobutton,true);
+	  set(edit_panel_page.style_3D_radiobutton,true);
 	  
 	//VP: Check that settings of 'Chart Type', 'Data Profile', 'Display Name', 'Chart Title', 'Show Title' and 'Legends' stay unchanged.
-	  checkControlProperty(addnewpanel_page.chart_type_radiobutton,"isSelected","true");
-	  checkSelectedValue(addnewpanel_page.data_profile_combobox, "Test Case Execution");
-	  checkControlProperty(addnewpanel_page.display_name_textbox,"value","hung_panel");
-	  checkControlProperty(addnewpanel_page.chart_title_textbox,"value","hung_chart");
-	  checkControlProperty(addnewpanel_page.show_title_checkbox,"isSelected","true");
-	  checkControlProperty(addnewpanel_page.top_radiobutton,"isSelected","true");
+	  //checkControlProperty(edit_panel_page.chart_type_radiobutton,"isSelected","true");
+	  checkSelectedValue(edit_panel_page.data_profile_combobox, "Test Case Execution");
+	  checkControlProperty(edit_panel_page.display_name_textbox,"value","hung_panel");
+	  checkControlProperty(edit_panel_page.chart_title_textbox,"value","hung_chart");
+	  checkControlProperty(edit_panel_page.show_title_checkbox,"isSelected","true");
+	  checkControlProperty(edit_panel_page.top_radiobutton,"isSelected","true");
 	  
 	//Step 24: Select 'Style' radio button (2D)
-	  set(addnewpanel_page.style_2D_radiobutton,true);
+	  set(edit_panel_page.style_2D_radiobutton,true);
 	  
 	//VP: Check that settings of 'Chart Type', 'Data Profile', 'Display Name', 'Chart Title', 'Show Title' and 'Legends' stay unchanged.
-	  checkControlProperty(addnewpanel_page.chart_type_radiobutton,"isSelected","true");
-	  checkSelectedValue(addnewpanel_page.data_profile_combobox, "Test Case Execution");
-	  checkControlProperty(addnewpanel_page.display_name_textbox,"value","hung_panel");
-	  checkControlProperty(addnewpanel_page.chart_title_textbox,"value","hung_chart");
-	  checkControlProperty(addnewpanel_page.show_title_checkbox,"isSelected","true");
-	  checkControlProperty(addnewpanel_page.top_radiobutton,"isSelected","true");
+	  //checkControlProperty(edit_panel_page.chart_type_radiobutton,"isSelected","true");
+	  checkSelectedValue(edit_panel_page.data_profile_combobox, "Test Case Execution");
+	  checkControlProperty(edit_panel_page.display_name_textbox,"value","hung_panel");
+	  checkControlProperty(edit_panel_page.chart_title_textbox,"value","hung_chart");
+	  checkControlProperty(edit_panel_page.show_title_checkbox,"isSelected","true");
+	  checkControlProperty(edit_panel_page.top_radiobutton,"isSelected","true");
+	  click(edit_panel_page.cancel_button);
   }
   @BeforeTest
   public void beforeTest() throws Exception {
@@ -125,7 +126,9 @@ public class DA_PANEL_TC041 extends AutoHLActions_Dashboard {
   }
 
   @AfterTest
-  public void afterTest() {
+  public void afterTest() throws InterruptedException {
+	  deletePage(page_name);
+	  exitPage();
   }
 
 }

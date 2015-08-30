@@ -275,6 +275,7 @@ public class AutoAction extends Init{
 	 */
 	public static void set(By control, boolean value)
 	{
+		waitForElement(control, 20);
 		new Set(driver, control, value );
 	}
 }
