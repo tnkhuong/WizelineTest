@@ -14,7 +14,6 @@ public class SelectActionBasedPanelName_Dashboard extends action_built_in.AutoAc
 				{
 					click(By.xpath(xpath_text_delete));
 				}
-
 			else
 				System.out.print("input wrong value for link_name");
 	}
