@@ -50,9 +50,7 @@ public class DA_PANEL_TC045 extends AutoHLActions_Dashboard{
   @AfterClass
   public void afterClass() throws InterruptedException {
 	  click(panel_config_page.cancel_button);
-	  deletePage("main_hung1");
-	  deletePage("main_hung2");
-	  deletePage("main_hung3");
+	  deletePage("main_hung1|main_hung2|main_hung3");
 	  exitPage();
   }
 }

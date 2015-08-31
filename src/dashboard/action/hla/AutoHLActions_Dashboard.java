@@ -30,7 +30,7 @@ public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
 	
 	/**
 	 * Description: this action is used to delete a created Page in Dashboard
-	 * @param page_name : the Page name want to delete
+	 * @param page_name : the Page name want to delete (each page name separated by "|" character. E.g: name1|name2)
 	 * @return None
 	 * @author Thuong Le
 	 */
@@ -99,7 +99,7 @@ public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
 	}
 	
 	/**
-	 * Description: this action is used to delete a created panel in Panels table 
+	 * Description: this action is used to delete a created panel in Panels table (each panel name separated by "|" character. E.g: name1|name2)
 	 * @param panel_name : name of panel want to delete
 	 * @return None
 	 * @author Thuong Le
