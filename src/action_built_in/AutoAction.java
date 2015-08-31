@@ -276,13 +276,8 @@ public class AutoAction extends Init{
 	 * @author Hai Vu
 	 */
 	public static boolean doesControlExist (By control){
-		try {
-			driver.findElement(control);
-			return true;
-		}
-		catch (NoSuchElementException e) {
-			return false;
-		}
+		DoesControlExist control_exist=new DoesControlExist(driver, control);
+		return control_exist.exist;
 	}
 	/**
 	 * Description: this action is used to set value for a checkbox.
