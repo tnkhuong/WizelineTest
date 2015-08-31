@@ -29,7 +29,9 @@ public class DA_PANEL_TC041 extends AutoHLActions_Dashboard {
 	//Step 2: Select a specific repository (SampleRepository)
 	//Step 3: Enter valid Username and Password (adminstrator/(blank))
 	//Step 4: Click 'Login' button
-	  //deletePage(page_name);
+	  deletePage(page_name);
+	  selectSubMenuItem(main_page.administer_link, main_page.panels_link);
+	  deletePanel_Dashboard("hung_panel");
 	  
 	//Step 5: Click 'Add Page' button
 	//Step 6: Enter Page Name (main_hung)
@@ -128,6 +130,8 @@ public class DA_PANEL_TC041 extends AutoHLActions_Dashboard {
   @AfterTest
   public void afterTest() throws InterruptedException {
 	  deletePage(page_name);
+	  selectSubMenuItem(main_page.administer_link, main_page.panels_link);
+	  deletePanel_Dashboard("hung_panel");
 	  exitPage();
   }
 
