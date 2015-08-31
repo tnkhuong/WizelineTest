@@ -55,7 +55,7 @@ public class DA_PANEL_TC040 extends AutoHLActions_Dashboard{
 	  //Step 18	Click 'Chart Type' drop-down menu
 	  //Step 19	Select 'Line' Chart Type
 	  selectDropdown(addnewpanel_page.chart_type_combobox,"Line", "text");
-	//VP	Check that 'Category' ,'Series' are enabled
+	  //VP	Check that 'Category' ,'Series' are enabled
 	  checkControlProperty(addnewpanel_page.category_combobox,"enabled","true");
 	  checkControlProperty(addnewpanel_page.series_combobox,"enabled","true");
   }

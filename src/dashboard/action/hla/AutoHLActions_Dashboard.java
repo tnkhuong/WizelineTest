@@ -27,6 +27,20 @@ public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
 	{
 		new AddPage_Dashboard(pageName,parent_page,display_after);
 	}
+	/**
+	 * Description: this action is used to add a new Page in Dashboard
+	 * @param pageName : the name of new added page
+	 * @param parent_page : the input value of Parent Page textbox
+	 * @param numberOfColumns : the input value of Number Of Columns combobox
+	 * @param display_after : the selected value of Display After combobox
+	 * @param parent_page : the input value of public checkbox
+	 * @return None
+	 * @author Hai Vu
+	 */
+	public static void addDashboardPage(String pageName,String parent_page,String numberOfColumns,String display_after,boolean publicOption) throws InterruptedException
+	{
+		new AddPage_Dashboard(pageName,parent_page,numberOfColumns,display_after,publicOption);
+	} 
 	
 	/**
 	 * Description: this action is used to delete a created Page in Dashboard
@@ -38,7 +52,17 @@ public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
 	{
 		new DeletePage_Dashboard(driver,page_name);
 	}
-	
+	/**
+	 * Description: this action is used to delete a created Page in Dashboard
+	 * @param page_name : the Page name want to delete
+	 * @param parent_page : the Parent Page containing the page want to delete
+	 * @return None
+	 * @author Hai Vu
+	 */
+	public static void deletePage(String page_name,String parent_page) throws InterruptedException
+	{
+		new DeletePage_Dashboard(driver,page_name,parent_page);
+	}
 	/**
 	 * Description: this action is used to select sub-menu item in Dashboard Page 
 	 * (Eg: select Add page sub-item after hovering the mouse over Settings button)
@@ -125,5 +149,51 @@ public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
 	public static void selectPanelsItem_Dashboard(String panel_type, String panel_item)
 	{
 		new SelectPanelsItem_Dashboard(panel_type, panel_item);
+	}
+	/**
+	 * Description: this action is used to launch Edit Page of pageName which does not have parent page  
+	 * @param pageName : Name of the page you want to edit
+	 * @return None
+	 * @author Hai Vu
+	 */
+	public static void launchEditPage_Dashboard (String pageName) throws InterruptedException
+	{
+		new LaunchEditPage_Dashboard(pageName);
+	}
+	/**
+	 * Description: this action is used to launch Edit Page of pageName which has parent page <parentPageName>
+	 * @param pageName : Name of the page you want to edit
+	 * @param parentPageName : Name of the parent page
+	 * @return None
+	 * @author Hai Vu
+	 */
+	public static void launchEditPage_Dashboard (String pageName,String parentPageName) throws InterruptedException
+	{
+		new LaunchEditPage_Dashboard(pageName,parentPageName);
+	}
+	/**
+	 * Description: this action is used to edit a page
+	 * @param pageName : Name of the page you want to edit
+	 * @param parentPageName : Name of the parent page
+	 * @param newPageName : New name of the page
+	 * @param newParentPage : New name of the parent page  
+	 * @param numberOfColumns : Number of Columns  
+	 * @param displayAfter : Name of the page of displayAfter
+	 * @param publicOption : Value of public checkbox              
+	 * @return None
+	 * @author Hai Vu
+	 */
+	public static void editPage_Dashboard (String pageName,String parentPageName,String newPageName,String newParentPage,String numberOfColumns,String displayAfter,boolean publicOption) throws InterruptedException
+	{
+		new EditPage_Dashboard(pageName,parentPageName,newPageName,newParentPage,numberOfColumns,displayAfter,publicOption);
+	}
+	/**
+	 * Description: this action is used to log out Dashboard
+	 * @return None
+	 * @author Hai Vu
+	 */
+	public static void logOut_Dashboard () throws InterruptedException
+	{
+		new LogOut_Dashboard();
 	}
 }
