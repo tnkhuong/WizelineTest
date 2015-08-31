@@ -134,5 +134,4 @@ public class DA_PANEL_TC041 extends AutoHLActions_Dashboard {
 	  deletePanel_Dashboard("hung_panel");
 	  exitPage();
   }
-
 }
