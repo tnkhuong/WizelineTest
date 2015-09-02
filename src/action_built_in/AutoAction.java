@@ -275,7 +275,7 @@ public class AutoAction extends Init{
 	 * @return boolean
 	 * @author Hai Vu
 	 */
-	public static boolean doesControlExist (By control){
+	public static boolean doesControlExist (By control){		
 		DoesControlExist control_exist=new DoesControlExist(driver, control);
 		return control_exist.exist;
 	}
