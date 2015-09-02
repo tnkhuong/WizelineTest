@@ -17,14 +17,14 @@ public class WaitForPageLoad {
 	public WaitForPageLoad(WebDriver driver,int timeout )
 	{
 
-	    Wait<WebDriver> wait = new WebDriverWait(driver, timeout);
+	    Wait<WebDriver> wait = new WebDriverWait(driver, timeout);	    
 	    wait.until(new Function<WebDriver, Boolean>() {
-	        public Boolean apply(WebDriver driver)
-	        {
-	            return String
-	                .valueOf(((JavascriptExecutor)driver).executeScript("return document.readyState"))
-	                .equals("complete");    
-	        }
-	    });
+	        				public Boolean apply(WebDriver driver)
+	        				{
+	        					return String
+	        							.valueOf(((JavascriptExecutor)driver).executeScript("return document.readyState"))
+	        							.equals("complete");    
+	        				}
+	    		        });   	    		  
 	}
 }
