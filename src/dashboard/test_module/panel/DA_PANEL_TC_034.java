@@ -36,7 +36,7 @@ public class DA_PANEL_TC_034 extends dashboard.action.hla.AutoHLActions_Dashboar
 	 @BeforeClass
 	  @Parameters("browser")
 	  public void beforeClass(String browser) throws Exception {
-		  //Navigate and log in Dashboard with the first account
+		  //Navigate and log in to Dashboard with the first account
 		  navigate(browser,GlobalVariables.glb_Url);
 		  logInDashboard(GlobalVariables.glb_Repository, GlobalVariables.glb_Username, GlobalVariables.glb_Password);
 	  }
