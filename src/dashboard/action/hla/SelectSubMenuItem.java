@@ -4,7 +4,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-
 import action_built_in.WaitForControl;
 import config.GlobalVariables;
 
@@ -15,7 +14,8 @@ public class SelectSubMenuItem extends action_built_in.AutoAction{
 		WebElement hover_element=driver.findElement(hover_control);
 		Actions action=new Actions(driver);
 		action.moveToElement(hover_element).perform();
-		new WaitForControl(driver, selected_control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
+		waitForPageLoad(GlobalVariables.DEFAULT_WAIT_4_CONTROL*2);
+		new WaitForControl(driver, selected_control, GlobalVariables.DEFAULT_WAIT_4_CONTROL*2);
 		click(selected_control);
 	}
 
