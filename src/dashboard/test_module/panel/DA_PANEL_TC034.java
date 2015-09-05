@@ -10,7 +10,7 @@ import dashboard.object_repository.AddNewPanel_Dashboard;
 import dashboard.object_repository.MainPage_Dashboard;
 import dashboard.object_repository.PanelsPage_Dashboard;
 
-public class DA_PANEL_TC_034 extends dashboard.action.hla.AutoHLActions_Dashboard{
+public class DA_PANEL_TC034 extends dashboard.action.hla.AutoHLActions_Dashboard{
 	static MainPage_Dashboard main_page = new MainPage_Dashboard();
 	static PanelsPage_Dashboard panels_page=new PanelsPage_Dashboard();
 	static AddNewPanel_Dashboard addnewpanel_page=new AddNewPanel_Dashboard();
