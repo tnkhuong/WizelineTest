@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
 
 import config.GlobalVariables;
 import config.Init;
@@ -289,6 +290,31 @@ public class AutoAction extends Init{
 		waitForElement(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
 		new Set(driver,control,value);
 	}
+	
+	/**
+	 * Description: this action is used to count how many xpath items match
+	 * @param xpath_string is input xpath string want to count
+	 * @return xpath_count is number of xpath items matched
+	 * @author Thuong Le
+	 */
+	public static int getMatchingXpathCount(String xpath_string)
+	{
+		GetMatchingXpathCount get_xpath=new GetMatchingXpathCount(driver, xpath_string);
+		return get_xpath.xpath_count;
+	}
+	
+	/**
+	 * Description: this action is used to get value of the input xpath string.
+	 * @param xpath_string is input xpath string want to count
+	 * @return xpath_count is number of xpath items matched
+	 * @author Thuong Le
+	 */
+	public static String getXpathValue(String xpath_string)
+	{
+		GetXpathValue xpath_get= new GetXpathValue(driver, xpath_string);
+		return xpath_get.xpath_value;
+	}
+	
 }
 
 
