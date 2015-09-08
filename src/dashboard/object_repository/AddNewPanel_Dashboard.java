@@ -27,7 +27,6 @@ public class AddNewPanel_Dashboard {
 	public By value_checkbox=By.id("chkValue");
 	public By percentage_checkbox=By.id("chkPercentage");
 	public By show_title_checkbox=By.id("chkShowTitle");
-	
-	
-	
+	public By panel_setting_label=By.cssSelector("#fdSettings legend");
+		
 }

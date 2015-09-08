@@ -20,7 +20,8 @@ public class AddPage_Dashboard extends AutoHLActions_Dashboard{
 		selectDropdown(new_page.display_after_combobox, display_after, "text");
 		 // Step	Click OK button
 		click(new_page.ok_button);
-		waitUntilControlNotExist(new_page.ok_button, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
+		waitUntilControlNotExist(new_page.ok_button, GlobalVariables.DEFAULT_WAIT_4_CONTROL*2);
+		waitForPageLoad(GlobalVariables.DEFAULT_WAIT_4_CONTROL*2);
 	}
 	public AddPage_Dashboard(String pageName,String parent_page,String numberOfColumns,String display_after,boolean publicOption) throws InterruptedException{
 		 // Step	Click on Add Page icon on Main Page
@@ -40,6 +41,7 @@ public class AddPage_Dashboard extends AutoHLActions_Dashboard{
 		set(new_page.public_checkbox, publicOption);
 		// Step	Click OK button
 		click(new_page.ok_button);
-		waitUntilControlNotExist(new_page.ok_button, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
+		waitUntilControlNotExist(new_page.ok_button, GlobalVariables.DEFAULT_WAIT_4_CONTROL*2);
+		waitForPageLoad(GlobalVariables.DEFAULT_WAIT_4_CONTROL*2);
 	}
 }

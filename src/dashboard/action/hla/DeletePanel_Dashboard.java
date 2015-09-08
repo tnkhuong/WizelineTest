@@ -24,6 +24,7 @@ public class DeletePanel_Dashboard extends AutoHLActions_Dashboard{
 			selectActionBasedPanelName_Dashboard(panel_name_list[i], "Delete");
 			confirmPopup("yes");
 			waitUntilControlNotExist(By.linkText(panel_name), GlobalVariables.DEFAULT_WAIT_4_CONTROL);
+			waitForPageLoad(GlobalVariables.DEFAULT_WAIT_4_CONTROL*2);
 			}
 		}
 	}

@@ -32,7 +32,8 @@ public class EditPage_Dashboard extends AutoHLActions_Dashboard{
 		set(edit_page.public_checkbox, publicOption);
 		// Step	Click OK button
 		click(edit_page.ok_button);
-		waitUntilControlNotExist(edit_page.ok_button, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
+		waitUntilControlNotExist(edit_page.ok_button, GlobalVariables.DEFAULT_WAIT_4_CONTROL*2);
+		waitForPageLoad(GlobalVariables.DEFAULT_WAIT_4_CONTROL*2);
 	}
 
 }

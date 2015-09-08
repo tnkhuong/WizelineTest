@@ -27,6 +27,7 @@ public class DeletePage_Dashboard extends AutoHLActions_Dashboard{
 				selectSubMenuItem(main_page.setting_link, main_page.delete_page_button);
 				confirmPopup("yes");
 				waitUntilControlNotExist(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
+				waitForPageLoad(GlobalVariables.DEFAULT_WAIT_4_CONTROL);
 			}
 		}
 	}
@@ -45,7 +46,8 @@ public class DeletePage_Dashboard extends AutoHLActions_Dashboard{
 				waitForPageLoad(20000);
 				selectSubMenuItem(main_page.setting_link, main_page.delete_page_button);
 				confirmPopup("yes");
-				waitUntilControlNotExist(pageNameLink, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
+				waitUntilControlNotExist(pageNameLink, GlobalVariables.DEFAULT_WAIT_4_CONTROL*2);
+				waitForPageLoad(GlobalVariables.DEFAULT_WAIT_4_CONTROL*2);
 			}
 		}
 	}

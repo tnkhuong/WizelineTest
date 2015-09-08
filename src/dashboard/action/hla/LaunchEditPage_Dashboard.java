@@ -2,6 +2,7 @@ package dashboard.action.hla;
 
 import org.openqa.selenium.By;
 
+import config.GlobalVariables;
 import dashboard.object_repository.EditPage_Dashboard;
 import dashboard.object_repository.MainPage_Dashboard;
 import dashboard.object_repository.NewPage_Dashboard;
@@ -17,9 +18,9 @@ public class LaunchEditPage_Dashboard extends AutoHLActions_Dashboard{
 			//Step	Select a page you want to edit
 			click(pageNameLink);
 			// Step Wait for pageName is loaded completely
-			waitForPageLoad(30000);
+			waitForPageLoad(GlobalVariables.DEFAULT_WAIT_4_CONTROL*2);
 			selectSubMenuItem(main_page.setting_link, main_page.edit_page_button);
-			waitForElement(edit_page.editPage_title, 10000);
+			waitForElement(edit_page.editPage_title, GlobalVariables.DEFAULT_WAIT_4_CONTROL*2);
 		}
 	}
 	public LaunchEditPage_Dashboard(String pageName, String parentPageName){
@@ -30,9 +31,9 @@ public class LaunchEditPage_Dashboard extends AutoHLActions_Dashboard{
 			//Step	Select a page you want to edit
 			selectSubMenuItem(parentPageNameLink,pageNameLink);
 			// Step Wait for pageName is loaded completely
-			waitForPageLoad(20000);
+			waitForPageLoad(GlobalVariables.DEFAULT_WAIT_4_CONTROL*2);
 			selectSubMenuItem(main_page.setting_link, main_page.edit_page_button);
-			waitForElement(edit_page.editPage_title, 10000);
+			waitForElement(edit_page.editPage_title, GlobalVariables.DEFAULT_WAIT_4_CONTROL*2);
 		}
 	}
 }
