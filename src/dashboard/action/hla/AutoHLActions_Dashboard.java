@@ -1,4 +1,6 @@
 package dashboard.action.hla;
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 
 public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
@@ -195,5 +197,17 @@ public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
 	public static void logOut_Dashboard () throws InterruptedException
 	{
 		new LogOut_Dashboard();
+	}
+	
+	/**
+	 * Description: this action is used to get all column's values of Data Profile table
+	 * @param column_num : Column number want to get values 
+	 * @return listitems : list containing all values of the input column
+	 * @author Hai Vu
+	 */
+	public static ArrayList<String> getDataProfileColumnValues_Dashboard(int column_num)
+	{
+		GetDataProfileColumnValues_Dashboard get_da_column_value=new GetDataProfileColumnValues_Dashboard(column_num);
+		return get_da_column_value.listitems;
 	}
 }

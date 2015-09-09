@@ -3,10 +3,10 @@ import java.util.ArrayList;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 
-public class CheckDataProfileColumnSorted extends action_built_in.AutoAction{
+public class CheckDataProfileColumnSorted_Dashborad extends action_built_in.AutoAction{
 ArrayList<String> listitems = new ArrayList<String>();
 	
-	public CheckDataProfileColumnSorted(int column_number, String sort_type) {
+	public CheckDataProfileColumnSorted_Dashborad(int column_number, String sort_type) {
 		
 		int num = getMatchingXpathCount("//table[@class='GridView']//tr");
 		
