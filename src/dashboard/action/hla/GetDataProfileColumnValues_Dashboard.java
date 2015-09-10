@@ -12,5 +12,6 @@ public class GetDataProfileColumnValues_Dashboard extends action_built_in.AutoAc
 			String item=getXpathValue("//table[@class='GridView']//tr[" + i + "]/td["+ column_num + "]");
 			listitems.add(item);
 		}
+		System.out.println(listitems);
 	}
 }

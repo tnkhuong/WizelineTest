@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 
 import config.GlobalVariables;
 import dashboard.action.hla.AutoHLActions_Dashboard;
-import dashboard.action.hla.SelectSubMenuItem;
 import dashboard.object_repository.MainPage_Dashboard;
 
 public class DA_DP_TC070 extends AutoHLActions_Dashboard {
@@ -23,6 +22,7 @@ public class DA_DP_TC070 extends AutoHLActions_Dashboard {
 	  //Step 5	Click Administer->Data Profiles
 	  selectSubMenuItem(main_page.administer_link, main_page.data_profiles_link);
 	  //VP	Check Data Profiles are listed alphabetically
+	  checkDataProfileColumnSorted_Dashboard(2, "ascending");
   }
   @BeforeClass
   @Parameters("browser")
