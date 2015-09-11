@@ -257,4 +257,27 @@ public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
 	{
 		new AddLevelSortedForFields_Dashboard(selected_fields);
 	}
+	
+	/**
+	 * Description: this action is used to customize fields (e.g. remove, move up, or move down) in Sort Field table.
+	 * @param list_field_name : list field name (each name separated by "|" character. E.g: Verion|Location)
+	 * @param list_option : list option name (each name separated by "|" character. E.g: move up|move down)
+	 * @return None
+	 * @author Thuong Le
+	 */
+	public static void customizedSortFieldsTable_Dashboard(String list_field_name, String list_option)
+	{
+		new CustomizedSortFieldsTable_Dashboard(list_field_name, list_option);
+	}
+	
+	/**
+	 * Description: this action is used to select an expected tab name in Data Profile page
+	 * @param tab_name : Tab name wants to be selected
+	 * @return None
+	 * @author Thuong Le
+	 */
+	public static void selectDataProfileTab_Dashboard(String tab_name)
+	{
+		new SelectDataProfileTab_Dashboard(tab_name);
+	}
 }

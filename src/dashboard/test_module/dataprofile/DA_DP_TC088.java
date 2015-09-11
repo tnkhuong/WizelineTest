@@ -1,6 +1,4 @@
 package dashboard.test_module.dataprofile;
-
-import org.openqa.selenium.interactions.ClickAndHoldAction;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -42,9 +40,11 @@ public class DA_DP_TC088 extends AutoHLActions_Dashboard{
 	  //Step 13	Select another data in drop down menu Field in Sort Fields tab:	Location
 	  //Step 14	Click Add Level button	
 	  addLevelSortedForFields_Dashboard("Version|Location");
-	  //Step 15	Click 'Up' button in the 'Location' field	
+	  //Step 15	Click 'Up' button in the 'Location' field
+	  customizedSortFieldsTable_Dashboard("Location", "move up");
 	  //VP	Check 'Location' field is above 'Version' field	
-	  //Step 17	Click 'Down' button in the 'Location' field	
+	  //Step 17	Click 'Down' button in the 'Location' field
+	  customizedSortFieldsTable_Dashboard("Version", "move down");
 	  //VP	Check 'Location' field is below 'Version' field	
 
   }
