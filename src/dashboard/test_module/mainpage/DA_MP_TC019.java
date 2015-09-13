@@ -1,7 +1,11 @@
 package dashboard.test_module.mainpage;
 
 import org.openqa.selenium.By;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
 import config.GlobalVariables;
 import dashboard.object_repository.EditPage_Dashboard;
 import dashboard.object_repository.MainPage_Dashboard;
@@ -17,11 +21,6 @@ public class DA_MP_TC019 extends dashboard.action.hla.AutoHLActions_Dashboard {
 	
 	@Test
     public void main () throws Exception{
-	  navigate(GlobalVariables.glb_Browser,GlobalVariables.glb_Url);
-	  logInDashboard(GlobalVariables.glb_Repository, GlobalVariables.glb_Username, GlobalVariables.glb_Password);
-	  //Delete pages if they exist
-	  deletePage("Another Test","Test");
-	  deletePage("Test");
 	  //Add 2 pages: Test & Another Test
 	  addDashboardPage("Test","","");
 	  addDashboardPage("Another Test", "Test", "", "", true);
@@ -40,8 +39,27 @@ public class DA_MP_TC019 extends dashboard.action.hla.AutoHLActions_Dashboard {
 	  logInDashboard(GlobalVariables.glb_Repository, "john", "");
 	  checkControlExist(test_page, 20000);
 	  checkControlNotExist(another_page);
-	  //Log Out and exist Dashboard
 	  logOut_Dashboard();
-	  exitPage();
 	}
+	 @BeforeClass
+	  @Parameters("browser")
+	  public void beforeClass(String browser) throws Exception {
+		  //Navigate and log in Dashboard with the first account
+		  navigate(browser,GlobalVariables.glb_Url);
+		  logInDashboard(GlobalVariables.glb_Repository, GlobalVariables.glb_Username, GlobalVariables.glb_Password);
+		  //Delete pages if they exist
+		  deletePage("Another Test","Test");
+		  deletePage("Test");
+	  }
+
+	  @AfterClass
+	  public void afterClass() throws InterruptedException {
+		  //Log in with the first account and delete pages
+		  logInDashboard(GlobalVariables.glb_Repository, GlobalVariables.glb_Username, GlobalVariables.glb_Password);
+		  deletePage("Another Test","Test");
+		  deletePage("Test");
+		  //Log Out and exist Dashboard
+		  logOut_Dashboard();
+		  exitPage();
+	  }
 }

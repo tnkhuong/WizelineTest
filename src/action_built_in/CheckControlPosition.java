@@ -31,6 +31,16 @@ public class CheckControlPosition {
 			Assert.assertTrue(location.x > base_location.x);
 			Assert.assertTrue(location.y == base_location.y);
 		}
+		else if (position=="next under")
+		{
+			//Assert.assertTrue(location.x == base_location.x);
+			Assert.assertTrue(location.y > base_location.y);
+		}
+		else if (position=="next above")
+		{
+			Assert.assertTrue(location.x == base_location.x);
+			Assert.assertTrue(location.y < base_location.y);
+		}
 		else
 		{
 			System.out.print("Not yet input expected position");

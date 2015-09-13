@@ -1,4 +1,6 @@
 package dashboard.action.hla;
+import java.util.ArrayList;
+
 import org.openqa.selenium.By;
 
 public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
@@ -195,5 +197,87 @@ public class AutoHLActions_Dashboard extends action_built_in.AutoAction{
 	public static void logOut_Dashboard () throws InterruptedException
 	{
 		new LogOut_Dashboard();
+	}
+	
+	/**
+	 * Description: this action is used to get all column's values of Data Profile table
+	 * @param column_num : Column number want to get values 
+	 * @return listitems : list containing all values of the input column
+	 * @author Thuong Le
+	 */
+	public static ArrayList<String> getDataProfileColumnValues_Dashboard(int column_num)
+	{
+		GetDataProfileColumnValues_Dashboard get_da_column_value=new GetDataProfileColumnValues_Dashboard(column_num);
+		return get_da_column_value.listitems;
+	}
+	
+	/**
+	 * Description: this action is used to check an expected column sorted
+	 * @param column_number : Column number want to check sorted
+	 * @param sort_type : sorted type E.g. ascending OR descending
+	 * @return listitems : list containing all values of the input column
+	 * @author Thuong Le
+	 */
+	public static void checkDataProfileColumnSorted_Dashboard(int column_number, String sort_type)
+	{
+		new CheckDataProfileColumnSorted_Dashboard(column_number, sort_type);
+	}
+	
+	/**
+	 * Description: this action is used to fill data into General Settings page
+	 * @param name : input value of Name textbox
+	 * @return None
+	 * @author Thuong Le
+	 */
+	public static void fillGeneralSettingsData_Dashboard(String name)
+	{
+		new FillGeneralSettingsData_Dashboard(name);
+	}
+	
+	/**
+	 * Description: this action is used to fill data into General Settings page
+	 * @param name : input value of Name textbox
+	 * @param item_type : input value of Item Type combobox
+	 * @param related_data : input value of Related Data combobox
+	 * @return None
+	 * @author Thuong Le
+	 */
+	public static void fillGeneralSettingsData_Dashboard(String name, String item_type, String related_data)
+	{
+		new FillGeneralSettingsData_Dashboard(name, item_type, related_data);
+	}
+	
+	/**
+	 * Description: this action is used to add level for selected fields in Sort Fields page
+	 * @param selected_fields : List of selected fields you want to add level (each value is separated by "|" )
+	 * @return None
+	 * @author Thuong Le
+	 */
+	public static void addLevelSortedForFields_Dashboard(String selected_fields)
+	{
+		new AddLevelSortedForFields_Dashboard(selected_fields);
+	}
+	
+	/**
+	 * Description: this action is used to customize fields (e.g. remove, move up, or move down) in Sort Field table.
+	 * @param list_field_name : list field name (each name separated by "|" character. E.g: Verion|Location)
+	 * @param list_option : list option name (each name separated by "|" character. E.g: move up|move down)
+	 * @return None
+	 * @author Thuong Le
+	 */
+	public static void customizedSortFieldsTable_Dashboard(String list_field_name, String list_option)
+	{
+		new CustomizedSortFieldsTable_Dashboard(list_field_name, list_option);
+	}
+	
+	/**
+	 * Description: this action is used to select an expected tab name in Data Profile page
+	 * @param tab_name : Tab name wants to be selected
+	 * @return None
+	 * @author Thuong Le
+	 */
+	public static void selectDataProfileTab_Dashboard(String tab_name)
+	{
+		new SelectDataProfileTab_Dashboard(tab_name);
 	}
 }
