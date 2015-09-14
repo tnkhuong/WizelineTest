@@ -315,6 +315,18 @@ public class AutoAction extends Init{
 		return xpath_get.xpath_value;
 	}
 	
+	/**
+	 * Description: this action is used to get value of the cell in a table.
+	 * @param row and column are input number of row and column which user want to get the value
+	 * @return return_value is value which get from expected row and column
+	 * @author Khuong Truong
+	 */
+	public static String getTableCellValue(By table_control,int row, int column)
+	{
+		waitForElement(table_control, 10);
+		GetTableCellValue get_value= new GetTableCellValue(driver, table_control, row, column);
+		return get_value.return_value;
+	}
 }
 
 
