@@ -9,4 +9,5 @@ public class SortFieldsPage_Dashboard {
 	public By next_button=By.cssSelector("input[value='Next']");
 	public By finish_button=By.cssSelector("input[value='Finish']");
 	public By cancel_button=By.cssSelector("input[value='Cancel']");
+	public By sort_fields_table=By.id("profilesettings");
 }

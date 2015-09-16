@@ -333,7 +333,7 @@ public class AutoAction extends Init{
 	/**
 	 * Description: this action is used to get row and column of the cell which contain the expected value in a table.
 	 * @param Enter a string value which user want to get the row and column
-	 * @return return_row and return_column are value which get from expected value
+	 * @return return_row and return_column or an ArrayList(index 0 is row, index 1 is column) are value which get from expected value 
 	 * @author Khuong Truong
 	 */
 	public static GetTableCellContaining getTableCellContaining (By table_control,String value)
