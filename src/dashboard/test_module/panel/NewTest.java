@@ -23,7 +23,7 @@ public class NewTest extends AutoHLActions_Dashboard {
       //click(panels_page.add_new_link);
 	  //addDashboardPanel("Logigear","name");
       
-	  String abc = getTableCellValue(panels_page.panel_table, 1, 1);
+	  String abc = getTableCellValue(panels_page.panel_table, 2, 2);
 	  System.out.println("value:" + abc);
 	  
 	  
