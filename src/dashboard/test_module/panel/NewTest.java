@@ -23,7 +23,9 @@ public class NewTest extends AutoHLActions_Dashboard {
       //click(panels_page.add_new_link);
 	  //addDashboardPanel("Logigear","name");
       
-	  String abc = getTableCellValue(panels_page.panel_table, 2, 3);
+	  String abc = getTableCellValue(panels_page.panel_table, 1, 1);
+	  System.out.println("value:" + abc);
+	  
 	  
 	  int row = getTableCellContaining(panels_page.panel_table, "Logigear").getReturn_row();  
 	  int column = getTableCellContaining(panels_page.panel_table, "Logigear").getReturn_column();

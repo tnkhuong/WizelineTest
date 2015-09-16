@@ -1,21 +1,23 @@
 package dashboard.test_module.dataprofile;
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import config.GlobalVariables;
 import dashboard.action.hla.AutoHLActions_Dashboard;
 import dashboard.object_repository.DataProfilePage_Dashboard;
 import dashboard.object_repository.DisplayFieldsPage_Dashboard;
 import dashboard.object_repository.GeneralSettingsPage_Dashboard;
 import dashboard.object_repository.MainPage_Dashboard;
+import dashboard.object_repository.SortFieldsPage_Dashboard;
 
 public class DA_DP_TC088 extends AutoHLActions_Dashboard{
 	MainPage_Dashboard main_page=new MainPage_Dashboard();
 	DataProfilePage_Dashboard data_profile_page= new DataProfilePage_Dashboard();
 	GeneralSettingsPage_Dashboard general_settings_page=new GeneralSettingsPage_Dashboard();
 	DisplayFieldsPage_Dashboard display_field_page=new DisplayFieldsPage_Dashboard();
+	SortFieldsPage_Dashboard sort_field_page=new SortFieldsPage_Dashboard();	
   @Test
   //DA_DP_TC088	 Verify user is able to change the level of sorting amongst fields by using 'Up' and 'Down' arrow.
   public void DA_DP_TC088_TC() {
@@ -48,9 +50,10 @@ public class DA_DP_TC088 extends AutoHLActions_Dashboard{
 	  //VP	Check 'Location' field is below 'Version' field	
 
   }
+  
   @BeforeClass
   @Parameters("browser")
-  public void beforeClass(String browser) throws Exception {
+  public void beforeClass(String browser) throws Exception {  
 	  navigate(browser,GlobalVariables.glb_Url);
   }
 
