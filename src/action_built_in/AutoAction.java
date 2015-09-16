@@ -3,9 +3,6 @@ package action_built_in;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-
 import config.GlobalVariables;
 import config.Init;
 
@@ -326,8 +323,7 @@ public class AutoAction extends Init{
 		waitForElement(table_control, 10);
 		//GetTableCellValue get_value= new GetTableCellValue(driver, table_control, row, column);
 		//return get_value.getReturn_value();
-		return new GetTableCellValue(driver, table_control, row, column).getReturn_value();
-		
+		return new GetTableCellValue(driver, table_control, row, column).getReturn_value();		
 	}
 	
 	/**
