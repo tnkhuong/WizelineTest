@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class GetTableCellValue extends AutoAction{
-	public static String return_value = null;
+	String return_value = null;
 	
 	/**
 	 * Description: this action is used to get value of the cell in a table.
@@ -27,5 +27,9 @@ public class GetTableCellValue extends AutoAction{
 		{
 			System.out.println("Row and column are out of range");
 		}
+	}
+	
+	public String getReturn_value(){
+		return return_value;
 	}
 }

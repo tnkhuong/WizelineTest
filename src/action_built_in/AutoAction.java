@@ -318,14 +318,28 @@ public class AutoAction extends Init{
 	/**
 	 * Description: this action is used to get value of the cell in a table.
 	 * @param row and column are input number of row and column which user want to get the value
-	 * @return return_value is value which get from expected row and column
+	 * @return return_value is value which is gotten from expected row and column
 	 * @author Khuong Truong
 	 */
 	public static String getTableCellValue(By table_control,int row, int column)
 	{
 		waitForElement(table_control, 10);
-		GetTableCellValue get_value= new GetTableCellValue(driver, table_control, row, column);
-		return get_value.return_value;
+		//GetTableCellValue get_value= new GetTableCellValue(driver, table_control, row, column);
+		//return get_value.getReturn_value();
+		return new GetTableCellValue(driver, table_control, row, column).getReturn_value();
+		
+	}
+	
+	/**
+	 * Description: this action is used to get row and column of the cell which contain the expected value in a table.
+	 * @param Enter a string value which user want to get the row and column
+	 * @return return_row and return_column are value which get from expected value
+	 * @author Khuong Truong
+	 */
+	public static GetTableCellContaining getTableCellContaining (By table_control,String value)
+	{	
+		waitForElement(table_control, 10);
+		return new GetTableCellContaining(driver, table_control, value);
 	}
 }
 
