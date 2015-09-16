@@ -50,7 +50,15 @@ public class GetTableCellValue extends AutoAction{
 							this.return_value = td.getText();
 							return;
 						}
+						else if (ac_col>column)
+						{
+							return;
+						}						
 					}
+				}
+				else if (ac_row>row)
+				{
+					return;
 				}
 				}
 		}	
