@@ -39,6 +39,7 @@ public class GetTableCellValue extends AutoAction{
 			for(WebElement tr : row_table)
 			{
 				ac_row=ac_row+1;
+				ac_col=0;				
 				if (ac_row==row)
 				{
 					List<WebElement> col_table = tr.findElements(By.tagName("td"));
