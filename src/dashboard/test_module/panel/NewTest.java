@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 
+import action_built_in.GetTableCellContaining;
 import config.GlobalVariables;
 import dashboard.action.hla.AddPanel_Dashboard;
 import dashboard.action.hla.AutoHLActions_Dashboard;
@@ -24,7 +25,11 @@ public class NewTest extends AutoHLActions_Dashboard {
       
 	  String abc = getTableCellValue(panels_page.panel_table, 2, 3);
 	  
-	  System.out.println(abc);	  
+	  int row = getTableCellContaining(panels_page.panel_table, "Logigear").getReturn_row();  
+	  int column = getTableCellContaining(panels_page.panel_table, "Logigear").getReturn_column();
+	  
+	  System.out.println("Row:" + row);
+	  System.out.println("Column:" + column);	  
 	  
 	  /*
 	  String data_you_want_to_check = "Logigear1";
