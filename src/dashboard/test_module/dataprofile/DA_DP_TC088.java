@@ -1,9 +1,11 @@
 package dashboard.test_module.dataprofile;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
 import config.GlobalVariables;
 import dashboard.action.hla.AutoHLActions_Dashboard;
 import dashboard.object_repository.DataProfilePage_Dashboard;
@@ -42,11 +44,15 @@ public class DA_DP_TC088 extends AutoHLActions_Dashboard{
 	  //Step 13	Select another data in drop down menu Field in Sort Fields tab:	Location
 	  //Step 14	Click Add Level button	
 	  addLevelSortedForFields_Dashboard("Version|Location");
+	  System.out.println(getTableCellValue(By.id("profilesettings"), 4, 1));
+	  int row=getTableCellContaining(By.id("profilesettings"), "Sort by:Version").getReturn_row();
+	  int colum=getTableCellContaining(By.id("profilesettings"), "Sort by:Version").getReturn_column();
+	  System.out.println(row);System.out.println(colum);
 	  //Step 15	Click 'Up' button in the 'Location' field
-	  customizedSortFieldsTable_Dashboard("Location", "move up");
+	  //customizedSortFieldsTable_Dashboard("Location", "move up");
 	  //VP	Check 'Location' field is above 'Version' field	
 	  //Step 17	Click 'Down' button in the 'Location' field
-	  customizedSortFieldsTable_Dashboard("Version", "move down");
+	  //customizedSortFieldsTable_Dashboard("Version", "move down");
 	  //VP	Check 'Location' field is below 'Version' field	
 
   }
