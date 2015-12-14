@@ -2,9 +2,12 @@ package action_built_in;
 
 import java.util.ArrayList;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+
 import config.GlobalVariables;
 import config.Init;
+import config.LogConfig;
 
 public class AutoAction extends Init{
 
@@ -336,6 +339,18 @@ public class AutoAction extends Init{
 	{	
 		waitForElement(table_control, 10);
 		return new GetTableCellContaining(driver, table_control, value);
+	}
+	
+	/**
+	 * Description: this action is used set initial configuration for Log4j report
+	 * @param class_name: a name of class you want to use log
+	 * @return return log
+	 * @author Thuong Le
+	 */
+	public static Logger logConfig(String class_name)
+	{
+		LogConfig l=new LogConfig(class_name);
+		return l.logger;
 	}
 }
 
