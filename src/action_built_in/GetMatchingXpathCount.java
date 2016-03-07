@@ -11,7 +11,7 @@ public class GetMatchingXpathCount extends AutoAction {
 	 * Description: this action is used to count how many xpath items match
 	 * @param xpath_string is input xpath string want to count
 	 * @return xpath_count is number of xpath items matched
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public GetMatchingXpathCount(WebDriver driver, String xpath_string)
 	{

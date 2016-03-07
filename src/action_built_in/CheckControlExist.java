@@ -13,7 +13,7 @@ public class CheckControlExist {
 	 * @param control is object
 	 * @param timeout is a time period waiting until the control is existed
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 
 	public CheckControlExist(WebDriver driver, By control) {

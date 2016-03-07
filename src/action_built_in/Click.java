@@ -10,7 +10,7 @@ public class Click {
 	 * Description: this action is used to click a webElement
 	 * @param control is object
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public Click(WebDriver driver,By control)
 	{

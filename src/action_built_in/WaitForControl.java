@@ -12,7 +12,7 @@ public class WaitForControl {
 	 * @param control is object
 	 * @param timeout is waiting time for control to appear
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public WaitForControl(WebDriver driver,By control, long timeout)
 	 {

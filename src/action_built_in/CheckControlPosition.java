@@ -13,7 +13,7 @@ public class CheckControlPosition {
 	 * @param base_control is a base position to check control position
 	 * @param position: next right, next left
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public CheckControlPosition(WebDriver driver, By control, By base_control,String position)
 	{

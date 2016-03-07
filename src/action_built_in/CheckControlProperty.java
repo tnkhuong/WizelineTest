@@ -13,7 +13,7 @@ public class CheckControlProperty {
 	 * @param property is property's name: enabled, value,isSelected
 	 * @param expected is expected value of the property
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public CheckControlProperty(WebDriver driver, By control, String property,String expected)
 	{

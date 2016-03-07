@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
  * @param control is object
  * @param Svalue is text will enter textbox
  * @return None
- * @author Hai Vu
+ * @author Khuong Truong
  */
 public class Set {
 	public Set (WebDriver driver,By control,Boolean value){

@@ -9,7 +9,7 @@ public class GetXpathValue {
 	 * Description: this action is used to get value of the input xpath string.
 	 * @param xpath_string is input xpath string want to count
 	 * @return xpath_count is number of xpath items matched
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public GetXpathValue(WebDriver driver, String xpath_string)
 	{

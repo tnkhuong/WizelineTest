@@ -9,7 +9,7 @@ public class Enter {
 	 * @param control is object
 	 * @param Svalue is text will enter textbox
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public Enter(WebDriver driver,By control,String value)
 	{

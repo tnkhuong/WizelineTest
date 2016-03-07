@@ -12,7 +12,7 @@ public class CheckSelectedValue {
 	 * @param control is combobox
 	 * @param expected_value
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public CheckSelectedValue(WebDriver driver, By control,String expected_value)
 	{

@@ -11,7 +11,7 @@ public class CheckPopUpMessage {
 	 * Description: this action is used to switch to popup window and check its mesg
 	 * @parm expectedMesg is the expected message displaying on the popup
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public CheckPopUpMessage(WebDriver driver, String expectedMesg) throws UnhandledAlertException
 	{

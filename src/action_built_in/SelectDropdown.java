@@ -11,7 +11,7 @@ public class SelectDropdown {
 	 * @param Svalue is text will be selected
 	 * @param option is select value by the following expected option: text,or value
 	 * @return None
-	 * @author Thuong Le (kt)
+	 * @author Khuong Truong
 	 */
 	public SelectDropdown(WebDriver driver,By control,String Svalue,String option){
 		WebElement element=driver.findElement(control);

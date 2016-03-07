@@ -11,7 +11,7 @@ public class ConfirmPopup {
 	 * Description: this action is used to switch to popup window and work with it
 	 * @param option is selected option (yes or no)
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 * @throws InterruptedException 
 	 */
 	public ConfirmPopup(WebDriver driver, String option) throws UnhandledAlertException

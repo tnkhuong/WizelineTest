@@ -13,7 +13,7 @@ public class CheckControlNotExist {
 	 * @param control is object
 	 * @param timeout is a time period waiting until the control is disappeared
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 
 	public CheckControlNotExist(WebDriver driver, By control) {

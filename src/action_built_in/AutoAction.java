@@ -28,7 +28,7 @@ public class AutoAction extends Init{
 	 * Description: this action is used to click a webElement
 	 * @param control is object
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public static void click(By control){
 		waitForElement(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
@@ -40,7 +40,7 @@ public class AutoAction extends Init{
 	 * @param control is object
 	 * @param Svalue is text will enter textbox
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public static void enter(By control, String value){
 		waitForElement(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
@@ -52,7 +52,7 @@ public class AutoAction extends Init{
 	 * @parm control is object
 	 * @param timeout is waiting time for waiting until the control exist on Page
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public static void checkControlExist(By control,long timeout)
 	{
@@ -63,7 +63,7 @@ public class AutoAction extends Init{
 	/**
 	 * Description: this action is used to exit a webpage
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public static void exitPage()
 	{
@@ -74,7 +74,7 @@ public class AutoAction extends Init{
 	 * Description: this action is used to switch to popup window and check its mesg
 	 * @parm expectedMesg is the expected message displaying on the popup
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public static void checkPopUpMessage(String expectedMesg)
 	{
@@ -87,7 +87,7 @@ public class AutoAction extends Init{
 	 * @param Svalue is text will be selected
 	 * @param option is select value by the following expected option: text,or value
 	 * @return None
-	 * @author Thuong Le (kt)
+	 * @author Khuong Truong (kt)
 	 */
 	public static void selectDropdown(By control, Integer value)
 	{
@@ -105,7 +105,7 @@ public class AutoAction extends Init{
 	 * @param control is object
 	 * @param timeout is waiting time for control to appear
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public static void waitForElement(By control, long timeout)
 	{
@@ -122,7 +122,7 @@ public class AutoAction extends Init{
 	 * @param control is object
 	 * @param timeout is waiting time for waiting the control no longer exist on the page
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public static void waitUntilControlNotExist(By control, int timeout) throws InterruptedException
 	{
@@ -135,7 +135,7 @@ public class AutoAction extends Init{
 	 * @param base_control is a base position to check control position
 	 * @param position: next right, next left
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public static void checkControlPosition(By control, By base_control,String position)
 	{
@@ -147,7 +147,7 @@ public class AutoAction extends Init{
 	 * Description: this action is used to switch to popup window and work with it
 	 * @param option is selected option (yes or no)
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 * @throws InterruptedException 
 	 */
 	public static void confirmPopup(String option) throws InterruptedException
@@ -160,7 +160,7 @@ public class AutoAction extends Init{
 	 * @param control is object
 	 * @param timeout is a time period waiting until the control is disappeared
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public static void checkControlNotExist(By control) throws InterruptedException
 	{
@@ -210,7 +210,7 @@ public class AutoAction extends Init{
 	 * @param control is combobox/listbox object
 	 * @param expected_value is the expected value of the selected item
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public static void checkSelectedValue( By control,String expected_value)
 	{
@@ -223,7 +223,7 @@ public class AutoAction extends Init{
 	 * @param property is property's name: enabled, value,isSelected
 	 * @param expected is expected value of the property
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public static void checkControlProperty(By control,String property, String expected)
 	{
@@ -263,7 +263,7 @@ public class AutoAction extends Init{
 	 * @param list_control is combobox/listbox object
 	 * @param list_item is list of expected items want to check
 	 * @return None
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public static void checkListItemsExist(By list_control, String[] list_item)
 	{
@@ -274,7 +274,7 @@ public class AutoAction extends Init{
 	 * Description: this action is used to check if control exist (visible) or not.
 	 * @param control is WebDriver element
 	 * @return boolean
-	 * @author Hai Vu
+	 * @author Khuong Truong
 	 */
 	public static boolean doesControlExist (By control){		
 		DoesControlExist control_exist=new DoesControlExist(driver, control);
@@ -284,7 +284,7 @@ public class AutoAction extends Init{
 	 * Description: this action is used to set value for a checkbox.
 	 * @param control is WebDriver element
 	 * @return None
-	 * @author Hai Vu
+	 * @author Khuong Truong
 	 */
 	public static void set(By control, Boolean value){
 		waitForElement(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
@@ -295,7 +295,7 @@ public class AutoAction extends Init{
 	 * Description: this action is used to count how many xpath items match
 	 * @param xpath_string is input xpath string want to count
 	 * @return xpath_count is number of xpath items matched
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public static int getMatchingXpathCount(String xpath_string)
 	{
@@ -307,7 +307,7 @@ public class AutoAction extends Init{
 	 * Description: this action is used to get value of the input xpath string.
 	 * @param xpath_string is input xpath string want to count
 	 * @return xpath_count is number of xpath items matched
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public static String getXpathValue(String xpath_string)
 	{
@@ -345,7 +345,7 @@ public class AutoAction extends Init{
 	 * Description: this action is used set initial configuration for Log4j report
 	 * @param class_name: a name of class you want to use log
 	 * @return return log
-	 * @author Thuong Le
+	 * @author Khuong Truong
 	 */
 	public static Logger logConfig(String class_name)
 	{

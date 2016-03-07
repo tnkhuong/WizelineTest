@@ -12,7 +12,7 @@ public class WaitForPageLoad {
 	 * Description: Wait for page load successfully
 	 * @param timeout is waiting time
 	 * @return None
-	 * @author copy from nguoi khac
+	 * @author Khuong Truong
 	 */
 	public WaitForPageLoad(WebDriver driver,int timeout )
 	{
