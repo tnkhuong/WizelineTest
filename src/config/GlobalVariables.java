@@ -5,7 +5,7 @@ public class GlobalVariables {
 	public static String glb_CHR_DriverPath = ".\\chromedriver.exe";
 	public static int DEFAULT_WAIT_4_PAGE = 50;
 	public static int DEFAULT_WAIT_4_CONTROL = 20;
-	public static String glb_Url = "http://localhost:54000/TADashboard/login.jsp";
+	public static String glb_Url = "https://google.com";
 	public static String glb_Browser="firefox";
 	public static String glb_Username = "administrator";
 	public static String glb_Password = "";
