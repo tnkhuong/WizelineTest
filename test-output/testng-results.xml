@@ -2,31 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="TestSuite" duration-ms="92735" started-at="2015-09-17T09:20:04Z" finished-at="2015-09-17T09:21:37Z">
+  <suite name="Default suite" duration-ms="6431" started-at="2016-10-09T17:26:10Z" finished-at="2016-10-09T17:26:16Z">
     <groups>
     </groups>
-    <test name="FirefoxTest" duration-ms="92735" started-at="2015-09-17T09:20:04Z" finished-at="2015-09-17T09:21:37Z">
-      <class name="dashboard.test_module.dataprofile.DA_DP_TC088">
-        <test-method status="PASS" signature="beforeClass(java.lang.String)[pri:0, instance:dashboard.test_module.dataprofile.DA_DP_TC088@171769e]" name="beforeClass" is-config="true" duration-ms="38527" started-at="2015-09-17T16:20:04Z" finished-at="2015-09-17T16:20:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="6431" started-at="2016-10-09T17:26:10Z" finished-at="2016-10-09T17:26:16Z">
+      <class name="demo.testcase.DemoTestCase">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:demo.testcase.DemoTestCase@4501b7af]" name="beforeTest" is-config="true" duration-ms="2945" started-at="2016-10-10T00:26:10Z" finished-at="2016-10-10T00:26:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="DA_DP_TC088_TC()[pri:0, instance:dashboard.test_module.dataprofile.DA_DP_TC088@171769e]" name="DA_DP_TC088_TC" duration-ms="46487" started-at="2015-09-17T16:20:43Z" finished-at="2015-09-17T16:21:29Z">
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="f()[pri:0, instance:demo.testcase.DemoTestCase@4501b7af]" name="f" duration-ms="2263" started-at="2016-10-10T00:26:13Z" finished-at="2016-10-10T00:26:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DA_DP_TC088_TC -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:dashboard.test_module.dataprofile.DA_DP_TC088@171769e]" name="afterClass" is-config="true" duration-ms="7689" started-at="2015-09-17T16:21:29Z" finished-at="2015-09-17T16:21:37Z">
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:demo.testcase.DemoTestCase@4501b7af]" name="afterTest" is-config="true" duration-ms="1208" started-at="2016-10-10T00:26:15Z" finished-at="2016-10-10T00:26:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- dashboard.test_module.dataprofile.DA_DP_TC088 -->
-    </test> <!-- FirefoxTest -->
-  </suite> <!-- TestSuite -->
+        </test-method> <!-- afterTest -->
+      </class> <!-- demo.testcase.DemoTestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

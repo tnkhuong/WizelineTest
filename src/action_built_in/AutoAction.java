@@ -2,7 +2,7 @@ package action_built_in;
 
 import java.util.ArrayList;
 
-import org.apache.log4j.Logger;
+//import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 
 import config.GlobalVariables;
@@ -347,11 +347,11 @@ public class AutoAction extends Init{
 	 * @return return log
 	 * @author Khuong Truong
 	 */
-	public static Logger logConfig(String class_name)
-	{
-		LogConfig l=new LogConfig(class_name);
-		return l.logger;
-	}
+//	public static Logger logConfig(String class_name)
+//	{
+//		LogConfig l=new LogConfig(class_name);
+//		return l.logger;
+//	}
 }
 
 

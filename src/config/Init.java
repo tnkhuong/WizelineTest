@@ -3,6 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 //import config.GlobalVariables;
 
@@ -11,8 +12,13 @@ public class Init {
 	public static WebDriver setup(String browser) throws Exception{
        //Check if parameter passed from TestNG is 'firefox'
         if(browser.equalsIgnoreCase("firefox")){
+          System.setProperty("webdriver.gecko.driver","E:\\Tools Eclipse\\geckodriver.exe");	
         //create firefox instance
-          driver= new FirefoxDriver();
+          DesiredCapabilities capabilities = DesiredCapabilities.firefox();
+          capabilities.setCapability("marionette", true);
+          driver= new FirefoxDriver(capabilities);
+ 
+
         }
         //Check if parameter passed as 'chrome'
         else if(browser.equalsIgnoreCase("chrome")){
