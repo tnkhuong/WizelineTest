@@ -17,11 +17,11 @@ public class DemoTestCase extends AutoHLActions{
 	  @BeforeTest
 	  public void beforeTest() throws Exception {
 		  //Navigate Google.com on Chrome browser
-		  navigate("chrome",GlobalVariables.glb_Url);
+		  navigate(GlobalVariables.glb_Browser,GlobalVariables.glb_Url);
 	  }
 	  
 	  @Test
-	  public void f(){
+	  public void TC_001(){
 		  //Enter Selenium text into Search textbox then Click Search button.
 		  searchgoogle("Selenium");
 		  //Click "Selenium - Web Browser Automation" link (first link on Google Search).

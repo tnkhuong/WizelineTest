@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6431" started-at="2016-10-09T17:26:10Z" finished-at="2016-10-09T17:26:16Z">
+  <suite name="Default suite" duration-ms="12478" started-at="2016-10-11T17:34:01Z" finished-at="2016-10-11T17:34:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6431" started-at="2016-10-09T17:26:10Z" finished-at="2016-10-09T17:26:16Z">
+    <test name="Default test" duration-ms="12478" started-at="2016-10-11T17:34:01Z" finished-at="2016-10-11T17:34:13Z">
       <class name="demo.testcase.DemoTestCase">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:demo.testcase.DemoTestCase@4501b7af]" name="beforeTest" is-config="true" duration-ms="2945" started-at="2016-10-10T00:26:10Z" finished-at="2016-10-10T00:26:13Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:demo.testcase.DemoTestCase@4501b7af]" name="beforeTest" is-config="true" duration-ms="6619" started-at="2016-10-12T00:34:01Z" finished-at="2016-10-12T00:34:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="f()[pri:0, instance:demo.testcase.DemoTestCase@4501b7af]" name="f" duration-ms="2263" started-at="2016-10-10T00:26:13Z" finished-at="2016-10-10T00:26:15Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:demo.testcase.DemoTestCase@4501b7af]" name="f" duration-ms="4355" started-at="2016-10-12T00:34:07Z" finished-at="2016-10-12T00:34:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:demo.testcase.DemoTestCase@4501b7af]" name="afterTest" is-config="true" duration-ms="1208" started-at="2016-10-10T00:26:15Z" finished-at="2016-10-10T00:26:16Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:demo.testcase.DemoTestCase@4501b7af]" name="afterTest" is-config="true" duration-ms="1481" started-at="2016-10-12T00:34:12Z" finished-at="2016-10-12T00:34:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

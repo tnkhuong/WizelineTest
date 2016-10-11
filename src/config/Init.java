@@ -12,7 +12,7 @@ public class Init {
 	public static WebDriver setup(String browser) throws Exception{
        //Check if parameter passed from TestNG is 'firefox'
         if(browser.equalsIgnoreCase("firefox")){
-          System.setProperty("webdriver.gecko.driver","E:\\Tools Eclipse\\geckodriver.exe");	
+          System.setProperty("webdriver.gecko.driver",GlobalVariables.glb_FF_DriverPath);	
         //create firefox instance
           DesiredCapabilities capabilities = DesiredCapabilities.firefox();
           capabilities.setCapability("marionette", true);
