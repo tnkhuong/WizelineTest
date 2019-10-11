@@ -1,6 +1,7 @@
 package action_built_in;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 public class Enter {
@@ -17,4 +18,8 @@ public class Enter {
 		driver.findElement(control).sendKeys(value);
 	}
 	
+	public Enter(WebDriver driver,By control,Keys keyboard)
+	{
+		driver.findElement(control).sendKeys(keyboard);
+	}	
 }

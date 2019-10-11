@@ -6,8 +6,8 @@
       <class name="demo.testcase.DemoTestCase">
         <methods>
           <include name="afterTest"/>
+          <include name="TC_001"/>
           <include name="beforeTest"/>
-          <include name="f"/>
         </methods>
       </class> <!-- demo.testcase.DemoTestCase -->
     </classes>

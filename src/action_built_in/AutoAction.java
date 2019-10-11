@@ -2,8 +2,10 @@ package action_built_in;
 
 import java.util.ArrayList;
 
+
 //import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 
 import config.GlobalVariables;
 import config.Init;
@@ -46,6 +48,11 @@ public class AutoAction extends Init{
 		waitForElement(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
 		new Enter(driver,control,value);
 	}
+	
+	public static void enter(By control, Keys keyboard){
+		waitForElement(control, GlobalVariables.DEFAULT_WAIT_4_CONTROL);
+		new Enter(driver,control,keyboard);
+	}	
 
 	/**
 	 * Description: this action is used to check control exist on a page

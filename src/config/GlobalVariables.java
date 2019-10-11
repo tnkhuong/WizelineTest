@@ -7,7 +7,7 @@ public class GlobalVariables {
 	public static int DEFAULT_WAIT_4_PAGE = 50;
 	public static int DEFAULT_WAIT_4_CONTROL = 20;
 	public static String glb_Url = "https://google.com";
-	public static String glb_Browser="firefox";
+	public static String glb_Browser="chrome";
 	public static String glb_Username = "administrator";
 	public static String glb_Password = "";
 	public static String glb_Repository = "SampleRepository";

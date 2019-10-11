@@ -17,8 +17,6 @@ public class Init {
           DesiredCapabilities capabilities = DesiredCapabilities.firefox();
           capabilities.setCapability("marionette", true);
           driver= new FirefoxDriver(capabilities);
- 
-
         }
         //Check if parameter passed as 'chrome'
         else if(browser.equalsIgnoreCase("chrome")){
