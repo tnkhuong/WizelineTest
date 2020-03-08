@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24316" started-at="2019-10-11T18:43:05Z" finished-at="2019-10-11T18:43:29Z">
+  <suite name="Default suite" duration-ms="39035" started-at="2020-03-08T04:37:54Z" finished-at="2020-03-08T04:38:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24316" started-at="2019-10-11T18:43:05Z" finished-at="2019-10-11T18:43:29Z">
-      <class name="demo.testcase.DemoTestCase">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:demo.testcase.DemoTestCase@14acaea5]" name="beforeTest" is-config="true" duration-ms="20757" started-at="2019-10-12T01:43:05Z" finished-at="2019-10-12T01:43:26Z">
+    <test name="Default test" duration-ms="39035" started-at="2020-03-08T04:37:54Z" finished-at="2020-03-08T04:38:33Z">
+      <class name="demo.testcase.TellUsAboutYourSelf">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:demo.testcase.TellUsAboutYourSelf@28feb3fa]" name="beforeTest" is-config="true" duration-ms="7" started-at="2020-03-08T11:37:54Z" finished-at="2020-03-08T11:37:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="TC_001()[pri:0, instance:demo.testcase.DemoTestCase@14acaea5]" name="TC_001" duration-ms="2464" started-at="2019-10-12T01:43:26Z" finished-at="2019-10-12T01:43:28Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:demo.testcase.TellUsAboutYourSelf@28feb3fa]" name="f" duration-ms="37778" started-at="2020-03-08T11:37:54Z" finished-at="2020-03-08T11:38:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_001 -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:demo.testcase.DemoTestCase@14acaea5]" name="afterTest" is-config="true" duration-ms="1077" started-at="2019-10-12T01:43:28Z" finished-at="2019-10-12T01:43:29Z">
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:demo.testcase.TellUsAboutYourSelf@28feb3fa]" name="afterTest" is-config="true" duration-ms="1234" started-at="2020-03-08T11:38:31Z" finished-at="2020-03-08T11:38:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- demo.testcase.DemoTestCase -->
+      </class> <!-- demo.testcase.TellUsAboutYourSelf -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
